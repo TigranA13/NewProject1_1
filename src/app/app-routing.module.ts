@@ -15,6 +15,7 @@ const routes: Routes = [
   {path:"services", component: ServicePageComponent},
   {path:"pricelist", component: PricelistPageComponent},
   {path:"contacts", component: ContactsPageComponent},
+  {path:"**",redirectTo:'home', pathMatch: 'full'}
 
 ];
 

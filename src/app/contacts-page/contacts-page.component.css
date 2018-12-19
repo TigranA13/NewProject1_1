@@ -1,0 +1,13 @@
+nav{
+  padding-left: 20px;
+}
+div.container{
+  min-height: 700px;
+  padding: 20px;
+}
+h4 {
+  padding: 15px;
+}
+h6{
+  font-weight: 500;
+}
