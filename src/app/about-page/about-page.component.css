@@ -12,3 +12,6 @@ ul{
   padding: 5px;
   list-style: square;
 }
+.breadcrumb{
+  font-size: 14px;
+}
