@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 
 declare var $:any;
 
@@ -9,9 +10,10 @@ declare var $:any;
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle( "Home" );
     $(document).ready(function(){
       $('.sidenav').sidenav();
       $('.carousel.carousel-slider').carousel({
