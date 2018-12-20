@@ -1,24 +1,39 @@
-nav{
-  background-color: rgba(255,255,255,.1);
 
-}
 .brand-logo{
-  margin-left: 50px;
+  font-size: 50px;
 }
-
+#topNav{
+  height: 80px;
+}
+#phoneIcon{
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+}
+.icons img{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+ margin-top: 25px;
+}
+#centerNav ul{
+  min-width: 600px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.sidenav-trigger i{
+  height: 30px;
+}
 nav ul a {
+  height: 70px;
   font-size: 18px;
 }
 nav ul a:hover {
-  background-color: #0277bd;
-  font-size: 20px;
+  background-color: #d50000;
 }
 .active{
-  background-color: #0277bd;
-  font-size: 20px;
-}
-.nav-wrapper{
-  height: 80px;
+  background-color: #d50000;
 }
 .line{
   width: 100%;

@@ -1,17 +1,24 @@
-nav{
-  padding-left: 20px;
+
+.nav-wrapper{
+  padding-left: 15px;
 }
-div.container{
-  min-height: 700px;
-  padding: 20px;
-}
-h4 {
+h4{
   padding: 15px;
+}
+h4.blue-grey {
+  height: 200px;
+  margin: 1px;
+}
+h6 {
+  font-weight: 500;
 }
 ul{
   padding: 5px;
   list-style: square;
 }
-.breadcrumb{
-  font-size: 14px;
+.sideNav{
+  margin-top: 20px;
+}
+.sideNav li{
+  height: 80px;
 }

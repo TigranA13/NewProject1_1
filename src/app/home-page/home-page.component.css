@@ -1,8 +1,27 @@
-.carousel .carousel-slider{
+.carousel.carousel-slider.carousel-item{
   height: 200px;
 }
-
-div.white, div.center{
-  padding-top: 20px;
-  padding-bottom: 20px;
+.firstH4{
+  margin-top: 50px;
 }
+div.hoverable{
+  margin-top: 10px;
+}
+.redline{
+  height: 8px;
+}
+.secondCards{
+  border-bottom: 5px solid #01579b;
+}
+.thirdCards{
+  border-bottom: 8px solid #d50000;
+}
+.cars{
+  color: #d50000;
+  border-bottom: 2px solid #01579b;
+}
+.cars:hover{
+  color: #01579b;
+  border-bottom: 2px solid #d50000;
+}
+

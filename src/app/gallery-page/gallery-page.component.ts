@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
+import {GalleryService} from "./gallery.service";
 
 @Component({
   selector: 'app-gallery-page',
@@ -7,11 +8,15 @@ import { Title }     from '@angular/platform-browser';
   styleUrls: ['./gallery-page.component.css']
 })
 export class GalleryPageComponent implements OnInit {
+  data:any=[];
 
-  constructor(private titleService: Title) { }
+  constructor(private titleService: Title, private galleryservice: GalleryService) { }
 
   ngOnInit() {
     this.titleService.setTitle( "Gallery" );
+    this.galleryservice.getData().subscribe(data=>{
+      this.data = data;
+    });
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavbarService} from "./navbar.service";
 
 
 @Component({
@@ -8,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  data:any=[];
+
+  constructor(private navservice: NavbarService) { }
 
   ngOnInit() {
+    this.navservice.getData().subscribe(data=>{
+      this.data = data;
+    });
+
   }
 
 }

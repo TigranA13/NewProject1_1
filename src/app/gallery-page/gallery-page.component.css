@@ -1,14 +1,10 @@
-nav{
-  padding-left: 20px;
+
+.cars{
+  color: #d50000;
+  border-bottom: 2px solid #01579b;
 }
-div.container{
-  min-height: 700px;
-  padding: 20px;
+.cars:hover{
+  color: #01579b;
+  border-bottom: 2px solid #d50000;
 }
-img{
-  height: 100px;
-  width: 100px;
-}
-.breadcrumb{
-  font-size: 14px;
-}
+

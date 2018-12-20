@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Title }     from '@angular/platform-browser';
+import { Title }  from '@angular/platform-browser';
+import {HomePageService} from "./home-page.service";
+import {GalleryService} from "../gallery-page/gallery.service";
 
 declare var $:any;
 
@@ -10,16 +12,24 @@ declare var $:any;
 })
 export class HomePageComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  data:any=[];
+  galleryData; any=[];
+
+  constructor(private titleService: Title, private homeservice: HomePageService, private galleryservice: GalleryService) { }
 
   ngOnInit() {
     this.titleService.setTitle( "Home" );
+    this.homeservice.getData().subscribe(data=>{
+      this.data = data
+    });
+    this.galleryservice.getData().subscribe(data=>{
+      this.galleryData = data;
+    });
     $(document).ready(function(){
-      $('.sidenav').sidenav();
       $('.carousel.carousel-slider').carousel({
         indicators: true,
         fullWidth:true,
-        noWrap: true
+        
       });
       setInterval(function(){
         $('.carousel.carousel-slider').carousel('next')

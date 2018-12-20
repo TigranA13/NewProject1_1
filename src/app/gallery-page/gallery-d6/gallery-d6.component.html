@@ -1,0 +1,69 @@
+
+
+
+
+
+<div class="container">
+  <nav class="white  z-depth-0">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a routerLink="/home" class=" black-text">Home</a>
+        <span class="black-text"> > </span>
+        <a routerLink="/galley" class=" black-text">Gallery</a>
+        <span class="black-text"> > </span>
+        <a routerLink="/galleryD6" class=" black-text">Gallery Details6</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container ">
+  <h4 class="red-text text-accent-4 left-align main">Gallery Details 6</h4>
+  <div class="row ">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+      industry's standard dummy text ever since the 1500s, when an unknown
+      printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <div class="col s12 m4 center-align" *ngFor="let d of data">
+      <h5 >{{d.name}}</h5>
+      <div class="card">
+        <div class="card-image">
+          <a href="#">
+            <img src="https://via.placeholder.com/300x200">
+          </a>
+        </div>
+      </div>
+      <div class="card-content cars">
+        <h5 >Price: 12323 </h5>
+        <h5 class="red-text text-accent-4">some texts</h5>
+        <table class="responsive-table striped">
+          <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+          </tr>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+          </tr>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <div class="col s12 xl6">
+          <a class="waves-effect waves-light btn-large red darken-4">Button</a>
+        </div>
+        <div class="col s12 xl6">
+          <a class="waves-effect waves-light btn-large light-blue darken-3">Button</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+

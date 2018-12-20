@@ -6,6 +6,8 @@ import {GalleryPageComponent} from "./gallery-page/gallery-page.component";
 import {ServicePageComponent} from "./service-page/service-page.component";
 import {PricelistPageComponent} from "./pricelist-page/pricelist-page.component";
 import {ContactsPageComponent} from "./contacts-page/contacts-page.component";
+import {GalleryDComponent} from "./gallery-page/gallery-d/gallery-d.component";
+
 
 const routes: Routes = [
   {path:"", redirectTo:'home', pathMatch: 'full'},
@@ -16,7 +18,6 @@ const routes: Routes = [
   {path:"pricelist", component: PricelistPageComponent},
   {path:"contacts", component: ContactsPageComponent},
   {path:"**",redirectTo:'home', pathMatch: 'full'}
-
 ];
 
 @NgModule({
