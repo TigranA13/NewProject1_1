@@ -11,17 +11,54 @@ div.hoverable{
   height: 8px;
 }
 .secondCards{
-  border-bottom: 5px solid #01579b;
+  border-bottom: 5px solid #0277db;
 }
 .thirdCards{
   border-bottom: 8px solid #d50000;
 }
+.thirdCards:hover{
+  border-bottom: 8px solid #0277db;
+}
 .cars{
   color: #d50000;
-  border-bottom: 2px solid #01579b;
+  border-bottom: 2px solid #0277db;
 }
 .cars:hover{
   color: #01579b;
   border-bottom: 2px solid #d50000;
 }
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.middle-indicator{
+  position:absolute;
+  top:40%;
+}
+.middle-indicator-text{
+  font-size: 7.2rem;
+}
+a.middle-indicator-text{
+  color:white !important;
+}
+.content-indicator{
+  width: 104px;
+  height: 104px;
+  background: none;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}

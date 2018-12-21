@@ -1,4 +1,17 @@
 <span *ngFor="let d of data">
+
+  <!--mail btn & modal-->
+
+  <!--btn-->
+   <div class="fixed-action-btn ">
+    <a href={{d.mailTo}} class="btn-floating btn-large green accent-4 cyan pulse">
+      <i class="large material-icons">mail</i>
+    </a>
+   </div>
+
+
+
+  <!--footer navbar-->
   <nav class="nav  light-blue darken-4" id="centerNav">
   <div class="nav-wrapper ">
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -22,6 +35,7 @@
 </ul>
 <div class="line red accent-4"></div>
 
+  <!--footer-->
 <footer class="page-footer  blue-grey darken-4 ">
   <div class="container">
     <div class="row ">
@@ -35,7 +49,10 @@
       </div>
       <div class="col l2 s12">
         <h5 class="white-text">{{d.emailTitle}}</h5>
-        <p class="grey-text text-lighten-4">{{d.emailTxt}}</p>
+        <a href={{d.emailLink}}>
+          <p class="grey-text text-lighten-4">{{d.emailTxt}}</p>
+        </a>
+
       </div>
       <div class="col l4 offset-l2 s12 icons">
         <h5 class="white-text">{{d.linksTitle}}</h5>

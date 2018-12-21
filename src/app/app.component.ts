@@ -10,6 +10,7 @@ export class AppComponent {
   ngOnInit() {
     $(document).ready(function(){
       $('.sidenav').sidenav();
+      
     });
   }
 }

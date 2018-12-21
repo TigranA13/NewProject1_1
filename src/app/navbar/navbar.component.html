@@ -1,16 +1,15 @@
 <span *ngFor="let d of data">
   <nav class="nav container z-depth-0 transparent" id="topNav">
     <div class="row">
-      <div class="col s12 m3">
+      <div class="col s12 m6 l2">
         <a  routerLink="/home" class="brand-logo red-text text-accent-4">{{d.logo}}</a>
       </div>
-      <div class="col m1 hide-on-med-and-down">
-        <img id="phoneIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDqyu5ogQOciSMDB5xG3pOiy6INWeyTxs5E50JY6gcpdMSVr5" alt="">
+      <div class="col  m6 l6 hide-on-med-and-down ">
+        <h4 class="black-text right phoneTxt">+7 986 777 555 </h4>
+        <img class="right" id="phoneIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDqyu5ogQOciSMDB5xG3pOiy6INWeyTxs5E50JY6gcpdMSVr5" alt="">
+
       </div>
-      <div class="col  m4 hide-on-med-and-down">
-        <h4 class="black-text">+000 000 000</h4>
-      </div>
-      <div class="col  m4 hide-on-med-and-down icons">
+      <div class="col  m12 l4 hide-on-med-and-down icons">
             <a class="grey-text text-lighten-3" href={{d.fbLink}}>
               <img src={{d.fbIcon}} alt="Facebook">
             </a>
@@ -26,7 +25,7 @@
       </div>
     </div>
   </nav>
-  <nav class="nav  light-blue darken-4" id="centerNav">
+  <nav class="nav  light-blue darken-3" id="centerNav">
     <div class="nav-wrapper ">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class=" hide-on-med-and-down">
@@ -41,10 +40,15 @@
   </nav>
   <ul class="sidenav" id="mobile-demo">
     <li><a routerLink="/home">{{d.home}}</a></li>
+    <li><div class="divider"></div></li>
     <li><a routerLink="/aboutus">{{d.aboutus}}</a></li>
+    <li><div class="divider"></div></li>
     <li><a routerLink="/gallery">{{d.gallery}}</a></li>
+    <li><div class="divider"></div></li>
     <li><a routerLink="/services">{{d.services}}</a></li>
+    <li><div class="divider"></div></li>
     <li><a routerLink="/pricelist">{{d.pricelist}}</a></li>
+    <li><div class="divider"></div></li>
     <li><a routerLink="/contacts">{{d.contacts}}</a></li>
   </ul>
   <div class="line red accent-4"></div>

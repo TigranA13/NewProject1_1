@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {GalleryService} from "../gallery.service";
 
+declare let $:any;
+
 @Component({
   selector: 'app-gallery-d5',
   templateUrl: './gallery-d5.component.html',
@@ -8,6 +10,7 @@ import {GalleryService} from "../gallery.service";
 })
 export class GalleryD5Component implements OnInit {
 
+  info:any=[];
   data:any=[];
 
   constructor( private galleryservice: GalleryService) { }
@@ -16,7 +19,12 @@ export class GalleryD5Component implements OnInit {
   ngOnInit() {
     this.galleryservice.getData5().subscribe(data=>{
       this.data = data
-
     })
+    this.galleryservice.getInfo5().subscribe(data=>{
+      this.info = data
+    })
+    $(document).ready(function(){
+      $('.modal').modal();
+    });
   }
 }

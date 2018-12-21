@@ -1,123 +1,41 @@
 
-<span *ngFor="let d of data">
+<div *ngFor="let d of data">
 
     <div class="container transparent">
+      <!--Sliders-->
+        <div class="carousel carousel-slider hide-on-small-only " data-indicators="true">
+          <div class="carousel-fixed-item center middle-indicator">
+            <div class="left">
+              <a href="#" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator">
+                <i class="material-icons left  middle-indicator-text">chevron_left</i>
+              </a>
+            </div>
 
-        <div class="carousel carousel-slider hide-on-small-only">
+            <div class="right">
+              <a href="#" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
+                <i class="material-icons right middle-indicator-text">chevron_right</i>
+              </a>
+            </div>
+          </div>
           <a class="carousel-item" href="#"><img class="responsive-img" src={{d.sImg1}}></a>
           <a class="carousel-item" href="#"><img  class="responsive-img" src={{d.sImg2}}></a>
           <a class="carousel-item" href="#"><img class="responsive-img" src={{d.sImg3}}></a>
           <a class="carousel-item" href="#"><img  class="responsive-img" src={{d.sImg4}}></a>
         </div>
 
+      <!--Main Content-->
       <h4 class="header red-text text-accent-4 center-align firstH4">{{d.h4_1}}</h4>
-    <div class="row center-align " *ngFor="let gd of galleryData">
+    <div class="row center-align " >
 
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD">
+      <div class="col s12 m4" *ngFor="let gd of galleryData">
+        <a routerLink={{gd.link}}>
           <div class="card">
             <div class="card-image">
-              <img src={{gd.img1}}>
+              <img src={{gd.img}}>
             </div>
           </div>
           <div class="card-content cars">
-            <h5>{{gd.name1}}</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD2">
-          <div class="card">
-            <div class="card-image">
-              <img src={{gd.img2}}>
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>{{gd.name2}}</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD3">
-          <div class="card">
-            <div class="card-image">
-              <img src={{gd.img3}}>
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>{{gd.name3}}</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD4">
-          <div class="card">
-            <div class="card-image">
-              <img src={{gd.img4}}>
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>{{gd.name4}}</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD5">
-          <div class="card">
-            <div class="card-image">
-              <img src={{gd.img5}}>
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>{{gd.name5}}</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD6">
-          <div class="card">
-            <div class="card-image">
-              <img src={{gd.img6}}>
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>{{gd.name6}}</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD7">
-          <div class="card">
-            <div class="card-image">
-              <img src={{gd.img7}}>
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5 >{{gd.name7}}</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD8">
-          <div class="card">
-            <div class="card-image">
-              <img src={{gd.img8}}>
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5 >{{gd.name8}}</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4">
-        <a routerLink="/galleryD9">
-          <div class="card">
-            <div class="card-image">
-              <img src={{gd.img9}}>
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5 >{{gd.name9}}</h5>
+            <h5>{{gd.name}}</h5>
           </div>
         </a>
       </div>
@@ -173,58 +91,54 @@
         <div class="row center-align">
 
           <div class="col s6 m2 hoverable">
-            <a href="#">
               <div class="card">
                 <div class="card-image">
-                  <img src={{d.smallImg1}}>
+                  <img class="materialboxed" src={{d.smallImg1}}>
                 </div>
               </div>
-            </a>
           </div>
           <div class="col s6 m2 hoverable">
-            <a href="#">
               <div class="card">
                 <div class="card-image">
-                  <img src={{d.smallImg2}}>
+                  <img class="materialboxed" src={{d.smallImg2}}>
                 </div>
               </div>
-            </a>
           </div>
           <div class="col s6 m2 hoverable">
-            <a href="#">
+
               <div class="card">
                 <div class="card-image">
-                  <img src={{d.smallImg3}}>
+                  <img class="materialboxed" src={{d.smallImg3}}>
                 </div>
               </div>
-            </a>
+
           </div>
           <div class="col s6 m2 hoverable">
-            <a href="#">
+
               <div class="card">
                 <div class="card-image">
-                  <img src={{d.smallImg4}}>
+                  <img class="materialboxed" src={{d.smallImg4}}>
                 </div>
               </div>
-            </a>
+
           </div>
           <div class="col s6 m2 hoverable">
-            <a href="#">
+
               <div class="card">
                 <div class="card-image">
-                  <img src={{d.smallImg5}}>
+                  <img class="materialboxed" src={{d.smallImg5}}>
                 </div>
               </div>
-            </a>
+
           </div>
           <div class="col s6 m2 hoverable">
-            <a href="#">
+
               <div class="card">
                 <div class="card-image">
-                  <img src={{d.smallImg6}}>
+                  <img class="materialboxed" src={{d.smallImg6}}>
                 </div>
               </div>
-            </a>
+
           </div>
 
       </div>
@@ -233,7 +147,7 @@
     <h4 class="header red-text text-accent-4 center-align">{{d.h4_4}}</h4>
 
       <div class="row center-align">
-        <div class="col s12 m3 hoverable">
+        <div class="col s12 m3 ">
           <a href="#">
             <div class="card">
               <div class="card-image">
@@ -246,7 +160,7 @@
             </div>
           </a>
         </div>
-        <div class="col s12 m3 hoverable">
+        <div class="col s12 m3 ">
           <a href="#">
             <div class="card">
               <div class="card-image">
@@ -259,7 +173,7 @@
             </div>
           </a>
         </div>
-        <div class="col s12 m3 hoverable">
+        <div class="col s12 m3 ">
           <a href="#">
             <div class="card">
               <div class="card-image">
@@ -272,7 +186,7 @@
             </div>
           </a>
         </div>
-        <div class="col s12 m3 hoverable">
+        <div class="col s12 m3 ">
           <a href="#">
             <div class="card">
               <div class="card-image">
@@ -289,6 +203,6 @@
       </div>
 
 </div>
-</span>
+</div>
 
 

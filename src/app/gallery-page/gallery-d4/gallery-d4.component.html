@@ -1,68 +1,77 @@
-
-
-
-
-<div class="container">
-  <nav class="white  z-depth-0">
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a routerLink="/home" class=" black-text">Home</a>
-        <span class="black-text"> > </span>
-        <a routerLink="/gallery" class=" black-text">Gallery</a>
-        <span class="black-text"> > </span>
-        <a routerLink="/galleryD4" class=" black-text">Gallery Details4</a>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<div class="container ">
-  <h4 class="red-text text-accent-4 left-align main">Gallery Details 4</h4>
-  <div class="row ">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-      industry's standard dummy text ever since the 1500s, when an unknown
-      printer took a galley of type and scrambled it to make a type specimen book.</p>
-    <div class="col s12 m4 center-align" *ngFor="let d of data">
-      <h5 >{{d.name}}</h5>
-      <div class="card">
-        <div class="card-image">
-          <a href="#">
-            <img src="https://via.placeholder.com/300x200">
-          </a>
+<div *ngFor="let i of info">
+  <div class="container">
+    <nav class="white  z-depth-0">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a routerLink="/home" class=" black-text">{{i.homeLinkName}}</a>
+          <span class="black-text"> > </span>
+          <a routerLink="/gallery" class=" black-text">{{i.galleryLinkName}}</a>
+          <span class="black-text"> > </span>
+          <a routerLink="/galleryD2" class=" black-text">{{i.galleryDetailsLinkName}}</a>
         </div>
       </div>
-      <div class="card-content cars">
-        <h5 >Price: 12323 </h5>
-        <h5 class="red-text text-accent-4">some texts</h5>
-        <table class="responsive-table striped">
-          <tbody>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-          </tr>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-          </tr>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="row">
-        <div class="col s12 xl6">
-          <a class="waves-effect waves-light btn-large red darken-4">Button</a>
-        </div>
-        <div class="col s12 xl6">
-          <a class="waves-effect waves-light btn-large light-blue darken-3">Button</a>
-        </div>
-      </div>
-
-    </div>
+    </nav>
   </div>
 
+  <div class="container ">
+    <h4 class="red-text text-accent-4 left-align main">{{i.mainH4}}</h4>
+    <div class="row ">
+      <p>{{i.p_1}}</p>
+      <div class="col s12 m6 xl4 center-align" *ngFor="let d of data">
+        <h5 >{{d.name}}</h5>
+        <div class="card">
+          <div class="card-image">
+            <a href="#{{d.id}}" class="modal-trigger">
+              <img src="https://via.placeholder.com/300x200">
+            </a>
+          </div>
+        </div>
+        <div class="card-content cars">
+          <h6 >{{d.price | currency:'RUB '}}</h6>
+          <h5 class="red-text text-accent-4">{{d.text}}</h5>
+          <table class="responsive-table striped centered">
+            <tbody>
+            <tr>
+              <td>{{d.td1}}</td>
+              <td>{{d.td2}}</td>
+            </tr>
+            <tr>
+              <td>{{d.td3}}</td>
+              <td>{{d.td4}}</td>
+            </tr>
+            <tr>
+              <td>{{d.td5}}</td>
+              <td>{{d.td6}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row">
+          <div class="col s12 xl6">
+            <a class="waves-effect waves-light btn-large red darken-4">{{i.button_1}}</a>
+          </div>
+          <div class="col s12 xl6">
+            <a href="#{{d.id}}"  class="waves-effect waves-light btn-large light-blue darken-3 modal-trigger">{{i.button_2}}</a>
+          </div>
+        </div>
+
+        <!--modal for car details-->
+        <div id="{{d.id}}" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>{{d.name}}</h4>
+            <img src={{d.img}} width="650">
+            <p>{{d.text}}</p>
+            <p>{{d.price | currency:'RUB '}}</p>
+          </div>
+          <div class="modal-footer">
+            <a  class="modal-action modal-close waves-effect waves-grey btn-flat"><i class="material-icons">close</i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
 
 </div>
-

@@ -13,6 +13,7 @@
     "phoneTxt":"+00 000 000 000",
     "emailTitle":"Email",
     "emailTxt":"info@domain.com",
+    "emailLink":"mailto:info@domain.com",
     "linksTitle":"Links",
     "fbIcon":"https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-128.png",
     "fbLink":"https://facebook.com",
@@ -21,7 +22,8 @@
     "twitterIcon":"http://www.iconarchive.com/download/i58881/dakirby309/windows-8-metro/Web-Twitter-alt-4-Metro.ico",
     "twitterLink":"https://twitter.com",
     "telegramIcon":"https://cdn1.iconfinder.com/data/icons/social-flat-dual-vertical/512/telegram-128.png",
-    "telegramLink":"https://telegram.org"
+    "telegramLink":"https://telegram.org",
+    "mailTo":"mailto:info@domain.com"
   }
 
 ]

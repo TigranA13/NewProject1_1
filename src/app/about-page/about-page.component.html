@@ -1,46 +1,50 @@
-<div class="container">
-  <nav class="white  z-depth-0">
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a routerLink="/home" class=" black-text">Home</a>
-        <span class="black-text"> > </span>
-        <a routerLink="/aboutus" class=" black-text">About Us</a>
+<div *ngFor="let d of data">
+
+  <div class="container">
+    <nav class="white  z-depth-0">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a routerLink="/home" class=" black-text">{{d.homeLinkName}}</a>
+          <span class="black-text"> > </span>
+          <a routerLink="/aboutus" class=" black-text">{{d.aboutUsLinkName}}</a>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 
   <div class="container">
 
-
     <div class="row">
 
-      <h4 class="red-text text-accent-4 left-align">About Us</h4>
+      <h4 class="red-text text-accent-4 left-align">{{d.mainH4}}</h4>
       <div class="col s12 l3 sideNav">
+        <h4 class="blue-grey darken-4 white-text">{{d.sideH4_1}}</h4>
         <ul class="collection with-header ">
-          <h4 class="blue-grey darken-4 white-text">First Names</h4>
-          <li class="collection-item blue-grey darken-4 white-text">Alvin</li>
-          <li class="collection-item blue-grey darken-4 white-text">Alvin</li>
-          <li class="collection-item blue-grey darken-4 white-text">Alvin</li>
-          <li class="collection-item blue-grey darken-4 white-text">Alvin</li>
-          <li class="collection-item blue-grey darken-4 white-text">Alvin</li>
-          <li class="collection-item blue-grey darken-4 white-text">Alvin</li>
+          <li class="collection-item blue-grey darken-4 white-text">{{d.li_1}}</li>
+          <li class="collection-item blue-grey darken-4 white-text">{{d.li_2}}</li>
+          <li class="collection-item blue-grey darken-4 white-text">{{d.li_3}}</li>
+          <li class="collection-item blue-grey darken-4 white-text">{{d.li_4}}</li>
+          <li class="collection-item blue-grey darken-4 white-text">{{d.li_5}}</li>
+          <li class="collection-item blue-grey darken-4 white-text">{{d.li_6}}</li>
         </ul>
       </div>
 
       <div class="col s12 l9">
-        <h4 class="center-align">Our Company</h4>
+        <h4 class="center-align">{{d.contentH4}}</h4>
         <div class="divider"></div>
-        <h6>Some Title Here 1</h6>
-        <p>Lorem ipsum dolor sit amet, cras ultrices lacus lacinia lacus magna, eu sodales eros. Velit suspendisse amet, in feugiat ante vel nam vestibulum enim, nulla iaculis wisi lorem duis urna mollit, vel rutrum at mauris nibh, amet neque dis. Curabitur nulla, orci nam, tristique posuere, pellentesque facilisis.</p>
+        <h6>{{d.h6_1}}</h6>
+        <p>{{d.p_1}}</p>
         <div class="divider"></div>
-        <h6>Some Title Here 2</h6>
-        <p>Lorem ipsum dolor sit amet, cras ultrices lacus lacinia lacus magna, eu sodales eros. Velit suspendisse amet, in feugiat ante vel nam vestibulum enim, nulla iaculis wisi lorem duis urna mollit, vel rutrum at mauris nibh, amet neque dis. Curabitur nulla, orci nam, tristique posuere, pellentesque facilisis.</p>
+        <h6>{{d.h6_2}}</h6>
+        <p>{{d.p_2}}</p>
         <div class="divider"></div>
-        <h6>Some Title Here 2</h6>
-        <p>Lorem ipsum dolor sit amet, cras ultrices lacus lacinia lacus magna, eu sodales eros. Velit suspendisse amet, in feugiat ante vel nam vestibulum enim, nulla iaculis wisi lorem duis urna mollit, vel rutrum at mauris nibh, amet neque dis. Curabitur nulla, orci nam, tristique posuere, pellentesque facilisis.</p>
+        <h6>{{d.h6_3}}</h6>
+        <p>{{d.p_3}}</p>
       </div>
 
     </div>
   </div>
+
+</div>
+
 

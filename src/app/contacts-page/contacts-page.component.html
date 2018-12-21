@@ -1,32 +1,37 @@
 
-
-<div class="container">
-  <nav class="white  z-depth-0">
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a routerLink="/home" class=" black-text">Home</a>
-        <span class="black-text"> > </span>
-        <a routerLink="/contacts" class=" black-text">Contacts</a>
+<div *ngFor="let d of data">
+  <div class="container">
+    <nav class="white  z-depth-0">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a routerLink="/home" class=" black-text">{{d.homeLinkName}}</a>
+          <span class="black-text"> > </span>
+          <a routerLink="/contacts" class=" black-text">{{d.contactsLinkName}}</a>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 
 
   <div class="container">
     <div class="row">
-      <h4 class="red-text text-accent-4 left-align">Contacts</h4>
+      <h4 class="red-text text-accent-4 left-align">{{d.mainH4}}</h4>
       <div class="col s12 l3">
-        <h6>Address</h6>
-        <p>Some addres</p>
-        <h6>Phone</h6>
-        <p>000 000 000 00</p>
-        <h6>Email</h6>
-        <p>info@domain.com</p>
+        <h6>{{d.addressTitle}}</h6>
+        <p>{{d.addressTxt}}</p>
+        <h6>{{d.phoneTitle}}</h6>
+        <p>{{d.phoneTxt}}</p>
+        <h6>{{d.emailTitle}}</h6>
+        <a href={{d.emailLink}}>
+          <p>{{d.emailTxt}}</p>
+        </a>
+
       </div>
       <div class="col s12 l9">
-        <img class="responsive-img" src="https://via.placeholder.com/800x400" alt="">
+        <img class="responsive-img" src={{d.img}} alt="">
       </div>
     </div>
   </div>
 
+
+</div>

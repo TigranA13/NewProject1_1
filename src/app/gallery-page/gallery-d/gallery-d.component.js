@@ -9,12 +9,19 @@ var core_1 = require('@angular/core');
 var GalleryDComponent = (function () {
     function GalleryDComponent(galleryservice) {
         this.galleryservice = galleryservice;
+        this.info = [];
         this.data = [];
     }
     GalleryDComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.galleryservice.getData1().subscribe(function (data) {
             _this.data = data;
+        });
+        this.galleryservice.getInfo1().subscribe(function (data) {
+            _this.info = data;
+        });
+        $(document).ready(function () {
+            $('.modal').modal();
         });
     };
     GalleryDComponent = __decorate([

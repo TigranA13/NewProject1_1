@@ -8,6 +8,8 @@ import {GalleryService} from "./gallery.service";
   styleUrls: ['./gallery-page.component.css']
 })
 export class GalleryPageComponent implements OnInit {
+
+  info:any=[];
   data:any=[];
 
   constructor(private titleService: Title, private galleryservice: GalleryService) { }
@@ -16,6 +18,9 @@ export class GalleryPageComponent implements OnInit {
     this.titleService.setTitle( "Gallery" );
     this.galleryservice.getData().subscribe(data=>{
       this.data = data;
+    });
+    this.galleryservice.getInfo().subscribe(data=>{
+      this.info = data;
     });
   }
 

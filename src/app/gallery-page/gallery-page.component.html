@@ -1,141 +1,43 @@
 
-<div class="container">
-  <nav class="white  z-depth-0">
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a routerLink="/home" class=" black-text">Home</a>
-        <span class="black-text"> > </span>
-        <a routerLink="/gallery" class=" black-text">Gallery</a>
+
+
+<div *ngFor="let i of info">
+  <div class="container">
+    <nav class="white  z-depth-0">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a routerLink="/home" class=" black-text">{{i.homeLinkName}}</a>
+          <span class="black-text"> > </span>
+          <a routerLink="/gallery" class=" black-text">{{i.galleryLinkName}}</a>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 
   <div class="container">
-    <h4 class="red-text text-accent-4 left-align">Gallery</h4>
-    <p>Felis dapibus volutpat ut. Sed mauris in wisi id, vehicula nec rhoncus, curabitur magna
-      odio et in phasellus libero. Dignissim ipsum porttitor ac eum libero, sit fermentum,
-      metus odio ipsum mauris arcu. Vehicula sit eros purus dolor tincidunt,
-      ante purus elit, enim dignissim justo nec.</p>
+    <h4 class="red-text text-accent-4 left-align">{{i.mainH4}}</h4>
+    <p>{{i.P_1}}</p>
 
     <div class="row center-align ">
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD">
+      <div class="col s12 m4 " *ngFor="let d of data">
+        <a routerLink={{d.link}}>
           <div class="card">
             <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
+              <img src={{d.img}}>
             </div>
           </div>
           <div class="card-content cars">
-            <h5>Car 1</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD2">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>Car 2</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD3">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>Car 3</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>Car 4</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD5">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>Car 5</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD6">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5>Car 6</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD7">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5 >Car 7</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4 ">
-        <a routerLink="/galleryD8">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5 >Car 8</h5>
-          </div>
-        </a>
-      </div>
-      <div class="col s12 m4">
-        <a routerLink="/galleryD9">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://via.placeholder.com/300x200">
-            </div>
-          </div>
-          <div class="card-content cars">
-            <h5 >Car 9</h5>
+            <h5>{{d.name}}</h5>
           </div>
         </a>
       </div>
 
     </div>
 
-
-    <p>Felis dapibus volutpat ut. Sed mauris in wisi id, vehicula nec rhoncus, curabitur magna
-      odio et in phasellus libero. Dignissim ipsum porttitor ac eum libero, sit fermentum,
-      metus odio ipsum mauris arcu. Vehicula sit eros purus dolor tincidunt,
-      ante purus elit, enim dignissim justo nec.</p>
+    <p>{{i.P_2}}</p>
   </div>
+
+</div>
 
 
 

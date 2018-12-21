@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
+import {AboutPageService} from "./about-page.service";
 
 @Component({
   selector: 'app-about-page',
@@ -8,10 +9,16 @@ import { Title }     from '@angular/platform-browser';
 })
 export class AboutPageComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  data:any=[];
+
+  constructor(private titleService: Title, private aboutservice: AboutPageService) { }
 
   ngOnInit() {
     this.titleService.setTitle( "About Us" );
+
+    this.aboutservice.getData().subscribe(data=>{
+      this.data = data;
+    })
   }
 
 }

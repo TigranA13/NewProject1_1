@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
+import {ServicePageService} from "./service-page.service";
 
 @Component({
   selector: 'app-service-page',
@@ -8,10 +9,15 @@ import { Title }     from '@angular/platform-browser';
 })
 export class ServicePageComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  data:any=[];
+
+  constructor(private titleService: Title, private servicesService: ServicePageService) { }
 
   ngOnInit() {
     this.titleService.setTitle( "Services" );
+    this.servicesService.getData().subscribe(data=>{
+      this.data = data
+    })
   }
 
 }

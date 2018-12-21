@@ -1,49 +1,40 @@
-<div class="container">
-  <nav class="white  z-depth-0">
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a routerLink="/home" class=" black-text">Home</a>
-        <span class="black-text"> > </span>
-        <a routerLink="/services" class=" black-text">Services</a>
+<div *ngFor="let d of data">
+
+  <div class="container">
+    <nav class="white  z-depth-0">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a routerLink="/home" class=" black-text">{{d.homeLinkName}}</a>
+          <span class="black-text"> > </span>
+          <a routerLink="/services" class=" black-text">{{d.servicesLinkName}}</a>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 
 
   <div class="container">
 
     <div class="row">
 
-      <h4 class="red-text text-accent-4 left-align">Services</h4>
+      <h4 class="red-text text-accent-4 left-align">{{d.mainH4}}</h4>
 
 
       <div class="col s12 m12">
-        <h4 class="center-align">Our Services</h4>
+        <h4 class="center-align">{{d.contentH4}}</h4>
         <div class="divider"></div>
-        <p>Lorem ipsum dolor sit amet, cras ultrices lacus lacinia lacus magna,
-          eu sodales eros. Velit suspendisse amet, in feugiat ante vel nam vestibulum enim,
-          nulla iaculis wisi lorem duis urna mollit, vel rutrum at mauris nibh, amet neque dis.
-          Curabitur nulla, orci nam, tristique posuere, pellentesque facilisis.</p>
+        <p>{{d.P_1}}</p>
         <div class="divider"></div>
-        <p>Lorem ipsum dolor sit amet, cras ultrices lacus lacinia lacus magna, eu sodales eros.
-          Velit suspendisse amet, in feugiat ante vel nam vestibulum enim, nulla iaculis wisi lorem duis urna mollit,
-          vel rutrum at mauris nibh, amet neque dis. Curabitur nulla, orci nam, tristique posuere,
-          pellentesque facilisis.</p>
+        <p>{{d.P_2}}</p>
         <div class="divider"></div>
-        <p>Lorem ipsum dolor sit amet, cras ultrices lacus lacinia lacus magna,
-          eu sodales eros. Velit suspendisse amet, in feugiat ante vel nam vestibulum enim,
-          nulla iaculis wisi lorem duis urna mollit, vel rutrum at mauris nibh, amet neque dis.
-          Curabitur nulla, orci nam, tristique posuere, pellentesque facilisis.</p>
+        <p>{{d.P_3}}</p>
         <div class="divider"></div>
-        <p>Lorem ipsum dolor sit amet, cras ultrices lacus lacinia lacus magna, eu sodales eros.
-          Velit suspendisse amet, in feugiat ante vel nam vestibulum enim, nulla iaculis wisi lorem duis urna mollit,
-          vel rutrum at mauris nibh, amet neque dis. Curabitur nulla, orci nam, tristique posuere,
-          pellentesque facilisis.</p>
-
+        <p>{{d.P_4}}</p>
       </div>
 
     </div>
   </div>
 
 
+
+</div>

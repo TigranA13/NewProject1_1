@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
+import {PricelistService} from "./pricelist.service";
 
 @Component({
   selector: 'app-pricelist-page',
@@ -8,10 +9,15 @@ import { Title }     from '@angular/platform-browser';
 })
 export class PricelistPageComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  data:any =[];
+
+  constructor(private titleService: Title, private pricelistservice: PricelistService) { }
 
   ngOnInit() {
     this.titleService.setTitle( "Price List" );
+    this.pricelistservice.getData().subscribe(data=>{
+      this.data=data;
+    })
   }
 
 

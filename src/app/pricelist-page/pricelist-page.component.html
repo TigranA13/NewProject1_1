@@ -14,238 +14,67 @@
   <div class="container">
     <div class="row">
       <h4 class="red-text text-accent-4 left-align">Price List</h4>
+      <div *ngFor="let d of data">
+        <h5 class="light-blue-text text-darken-4">{{d.name}}</h5>
+        <table class="responsive-table striped">
+          <thead>
 
-      <h5 class="light-blue-text text-darken-4">Car1</h5>
-      <table class="responsive-table">
-        <thead>
+          <tr>
+            <th>{{d.th_1}}</th>
+            <th>{{d.th_2}}</th>
+            <th>{{d.th_3}}</th>
+            <th>{{d.th_4}}</th>
+          </tr>
+          </thead>
 
-        <tr>
-          <th>Name</th>
-          <th>Item Name</th>
-          <th>Item Description</th>
-          <th>Item Price</th>
-        </tr>
-        </thead>
+          <tbody>
 
-        <tbody>
+          <tr>
+            <a href="#">
+              <td>{{d.td_1}}</td>
+            </a>
+            <td>{{d.td_2}}</td>
+            <td>{{d.td_3}}</td>
+            <td>{{d.td_4}}</td>
+          </tr>
+          <tr>
+            <a href="#">
+              <td>{{d.td_5}}</td>
+            </a>
+            <td>{{d.td_6}}</td>
+            <td>{{d.td_7}}</td>
+            <td>{{d.td_8}}</td>
+          </tr>
+          <tr>
+            <a href="#">
+              <td>{{d.td_9}}</td>
+            </a>
+            <td>{{d.td_10}}</td>
+            <td>{{d.td_11}}</td>
+            <td>{{d.td_12}}</td>
+          </tr>
+          <tr>
+            <a href="#">
+              <td>{{d.td_13}}</td>
+            </a>
+            <td>{{d.td_14}}</td>
+            <td>{{d.td_15}}</td>
+            <td>{{d.td_16}}</td>
+          </tr>
+          <tr>
+            <a href="#">
+              <td>{{d.td_17}}</td>
+            </a>
+            <td>{{d.td_18}}</td>
+            <td>{{d.td_19}}</td>
+            <td>{{d.td_20}}</td>
+          </tr>
+          </tbody>
+        </table>
 
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Eclair</td>
-          <td>Eclair</td>
-          <td>$0.87</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Jellybean</td>
-          <td>Jellybean</td>
-          <td>$3.76</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        </tbody>
-      </table>
+        <div class="redline red accent-4"></div>
 
-      <div class="redline red accent-4"></div>
-
-      <h5 class="light-blue-text text-darken-4">Car2</h5>
-      <table class="responsive-table">
-        <thead>
-        <tr>
-          <th>Name</th>
-          <th>Item Name</th>
-          <th>Item Description</th>
-          <th>Item Price</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Eclair</td>
-          <td>Eclair</td>
-          <td>$0.87</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Jellybean</td>
-          <td>Jellybean</td>
-          <td>$3.76</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        </tbody>
-      </table>
-
-      <div class="redline red accent-4"></div>
-
-      <h5 class="light-blue-text text-darken-4">Car3</h5>
-      <table class="responsive-table">
-        <thead>
-        <tr>
-          <th>Name</th>
-          <th>Item Name</th>
-          <th>Item Description</th>
-          <th>Item Price</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Eclair</td>
-          <td>Eclair</td>
-          <td>$0.87</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Jellybean</td>
-          <td>Jellybean</td>
-          <td>$3.76</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        </tbody>
-      </table>
-
-      <div class="redline red accent-4"></div>
-
-      <h5 class="light-blue-text text-darken-4">Car4</h5>
-      <table class="responsive-table">
-        <thead>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <th>Item Name</th>
-          <th>Item Description</th>
-          <th>Item Price</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Eclair</td>
-          <td>Eclair</td>
-          <td>$0.87</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Jellybean</td>
-          <td>Jellybean</td>
-          <td>$3.76</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        <tr>
-          <a href="#">
-            <td>Alvin</td>
-          </a>
-          <td>Lollipop</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-        </tbody>
-      </table>
-
-      <div class="redline red accent-4"></div>
+      </div>
 
       <p>Lorem Ipsum is simply dummy text of the printing and
         typesetting industry.

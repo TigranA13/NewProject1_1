@@ -10,6 +10,7 @@ var GalleryPageComponent = (function () {
     function GalleryPageComponent(titleService, galleryservice) {
         this.titleService = titleService;
         this.galleryservice = galleryservice;
+        this.info = [];
         this.data = [];
     }
     GalleryPageComponent.prototype.ngOnInit = function () {
@@ -17,6 +18,9 @@ var GalleryPageComponent = (function () {
         this.titleService.setTitle("Gallery");
         this.galleryservice.getData().subscribe(function (data) {
             _this.data = data;
+        });
+        this.galleryservice.getInfo().subscribe(function (data) {
+            _this.info = data;
         });
     };
     GalleryPageComponent = __decorate([

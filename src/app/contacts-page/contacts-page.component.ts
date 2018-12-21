@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
+import {ContactsService} from "./contacts.service";
 
 @Component({
   selector: 'app-contacts-page',
@@ -8,10 +9,15 @@ import { Title }     from '@angular/platform-browser';
 })
 export class ContactsPageComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  data:any=[];
+
+  constructor(private titleService: Title, private contactsservice: ContactsService) { }
 
   ngOnInit() {
     this.titleService.setTitle( "Contacts" );
+    this.contactsservice.getData().subscribe(data=>{
+      this.data = data;
+    })
   }
 
 }
