@@ -8,3 +8,9 @@ a.btn-large{
   margin-top: 10px;
   width: 160px;
 }
+.contactBtn{
+  background: linear-gradient(to top, #f57f17, #fdd835);
+}
+.detailsBtn{
+  background: linear-gradient(to top, #212121, #616161);
+}

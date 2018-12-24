@@ -1,29 +1,40 @@
-.icons img{
+.icons a img{
   height: 30px;
   width: 30px;
   margin-right: 5px;
 }
+#centerNav{
+  background: linear-gradient(to top, #f57f17, #fdd835);
+  width: 100%;
+  height: 60px;
+}
+
 #centerNav ul{
-  height: 20px;
-  min-width: 600px;
+  min-width: 800px;
+  height: 40px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
 }
+.material-icons{
+  width: 50px;
+  height: 50px;
+}
 nav ul a {
-  height: 70px;
+  height: 65px;
   font-size: 18px;
 }
 nav ul a:hover {
-  background-color: #d50000;
-
+  background: linear-gradient(to top, #212121, #616161);
 }
 .active{
-  background-color: #d50000;
+  background: linear-gradient(to top, #212121, #616161);
 }
 .line{
   width: 100%;
-  height: 10px;
+  height: 5px;
+  background-color:#212121;
+
 }
 nav{
   margin-top: 50px;

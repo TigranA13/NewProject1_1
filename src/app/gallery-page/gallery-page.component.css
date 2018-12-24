@@ -1,10 +1,17 @@
 
 .cars{
-  color: #d50000;
-  border-bottom: 2px solid #0277db;
+  min-height: 220px;
+
+  border-bottom: 2px solid #f9a825;
+}
+.cars h6{
+  color: #212121 ;
 }
 .cars:hover{
-  color: #01579b;
-  border-bottom: 2px solid #d50000;
-}
 
+  border-bottom: 2px solid #212121;
+}
+.cars:hover h6{
+  color: #f9a825 !important;
+
+}

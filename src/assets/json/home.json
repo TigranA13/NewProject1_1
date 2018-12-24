@@ -4,26 +4,26 @@
     "sImg2":"https://via.placeholder.com/500x200",
     "sImg3":"https://via.placeholder.com/500x200",
     "sImg4":"https://via.placeholder.com/500x200",
-    "h4_1":"Some Text Here 1",
-    "h4_2":"Some Text Here 2",
-    "h4_3":"Some Text Here 3",
-    "h4_4":"Some Text Here 4"
+    "h4_1":"Каталог строительной техники",
+    "h4_2":"Наши акции",
+    "h4_3":"Наши работы",
+    "h4_4":"Последние новости"
 
   },
   [
     {
       "cardImg":"https://via.placeholder.com/300x200",
-      "h5":"Text here 1",
+      "h5":"При заказе от 3 смен - Mondoro Asti в подарок",
       "p":"Some p here ......."
     },
     {
       "cardImg":"https://via.placeholder.com/300x200",
-      "h5":"Text here 2",
+      "h5":"Перевозка бытовок от 5000 руб.",
       "p":"Some p here ......."
     },
     {
       "cardImg":"https://via.placeholder.com/300x200",
-      "h5":"Text here 3",
+      "h5":"Ночью - дешевле!",
       "p":"Some p here ......."
     }
 

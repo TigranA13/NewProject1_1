@@ -1,7 +1,9 @@
 .carousel.carousel-slider.carousel-item{
   height: 200px;
 }
+
 .firstH4{
+  color: #f9a825;
   margin-top: 50px;
 }
 div.hoverable{
@@ -10,22 +12,46 @@ div.hoverable{
 .redline{
   height: 8px;
 }
+.gallery{
+  min-height: 220px;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid #f9a825;
+}
+.gallery h6{
+  color: #212121 !important;
+}
+.gallery:hover{
+  border-bottom:2px solid #212121;
+}
+.gallery:hover h6{
+  color: #f9a825 !important;
+}
 .secondCards{
-  border-bottom: 5px solid #0277db;
+  height: 380px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
+  border-bottom: 8px solid #f9a825;
+}
+.secondCards:hover h5{
+  color: #f9a825 !important;
 }
 .thirdCards{
-  border-bottom: 8px solid #d50000;
+  border-bottom: 8px solid #212121;
+}
+.thirdCards h5{
+  color: #f9a825 !important;
 }
 .thirdCards:hover{
-  border-bottom: 8px solid #0277db;
+  color: #212121 !important;
+  border-bottom: 8px solid #f9a825;
 }
-.cars{
-  color: #d50000;
-  border-bottom: 2px solid #0277db;
-}
-.cars:hover{
-  color: #01579b;
-  border-bottom: 2px solid #d50000;
+.thirdCards:hover h5{
+  color: #212121 !important;
 }
 
 .material-icons {

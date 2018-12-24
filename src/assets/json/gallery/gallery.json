@@ -1,55 +1,55 @@
 [
   {
-    "homeLinkName":"Home",
-    "galleryLinkName":"Gallery",
-    "mainH4":"Gallery",
+    "homeLinkName":"Главная",
+    "galleryLinkName":"Каталог техники",
+    "mainH4":"Каталог техники",
     "P_1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     "P_2":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
   [
     {
-      "name": "Car 1",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "АВТОКРАН",
+      "img": "./assets/images/1.jpg",
       "link":"/galleryD"
     },
     {
-      "name": "Car 2",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "КРАН-МАНИПУЛЯТОР",
+      "img": "./assets/images/2.jpg",
       "link":"/galleryD2"
     },
     {
-      "name": "Car 3",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "АВТОВЫШКИ",
+      "img": "./assets/images/3.jpg",
       "link":"/galleryD3"
     },
     {
-      "name": "Car 4",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "БОРТОВЫЕ МАШИНЫ",
+      "img": "./assets/images/4.jpg",
       "link":"/galleryD4"
     },
     {
-      "name": "Car 5",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "САМОСВАЛЫ",
+      "img": "./assets/images/5.jpg",
       "link":"/galleryD5"
     },
     {
-      "name": "Car 6",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "ЭКСКАВАТОРЫ-ПОГРУЗЧИКИ",
+      "img": "./assets/images/6.jpg",
       "link":"/galleryD6"
     },
     {
-      "name": "Car 7",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "ЭКСКАВАТОРЫ ГУСЕНИЧНЫЕ",
+      "img": "./assets/images/7.jpg",
       "link":"/galleryD7"
     },
     {
-      "name": "Car 8",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "ЭКСКАВАТОРЫ КОЛЕСНЫЕ",
+      "img": "./assets/images/8.jpg",
       "link":"/galleryD8"
     },
     {
-      "name": "Car 9",
-      "img": "https://via.placeholder.com/300x200",
+      "name": "ТЕЛЕСКОПИЧЕСКИЙ",
+      "img": "./assets/images/9.jpg",
       "link":"/galleryD9"
     }
   ]

@@ -24,7 +24,7 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit() {
 
-    this.titleService.setTitle( "Home" );
+    this.titleService.setTitle( "ГЛАВНАЯ" );
     this.homeservice.getData().subscribe(data=>{
       this.data.push(data[0]);
       this.data2 = data[1];
@@ -42,7 +42,7 @@ export class HomePageComponent implements OnInit {
         $('.modal').modal();
         $('.carousel').carousel({
           indicators: true,
-          fullWidth:true,
+          fullWidth: true,
           // noWrap: true
         });
         //  setInterval(function(){

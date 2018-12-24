@@ -15,7 +15,7 @@ var GalleryPageComponent = (function () {
     }
     GalleryPageComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.titleService.setTitle("Gallery");
+        this.titleService.setTitle("КАТАЛОГ ТЕХНИКИ");
         this.galleryservice.getData().subscribe(function (data) {
             _this.data = data[1];
             _this.info.push(data[0]);

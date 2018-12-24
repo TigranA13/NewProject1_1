@@ -3,9 +3,9 @@
   <nav class="white  z-depth-0">
     <div class="nav-wrapper">
       <div class="col s12">
-        <a routerLink="/home" class=" black-text">Home</a>
+        <a routerLink="/home" class=" black-text">Главная</a>
         <span class="black-text"> > </span>
-        <a routerLink="/pricelist" class=" black-text">Price List</a>
+        <a routerLink="/pricelist" class=" black-text">Прайс-лист</a>
       </div>
     </div>
   </nav>
@@ -13,9 +13,9 @@
 
   <div class="container">
     <div class="row">
-      <h4 class="red-text text-accent-4 left-align">Price List</h4>
+      <h4 class="yellow-text text-darken-3 left-align">Прайс-лист</h4>
       <div *ngFor="let d of data">
-        <h5 class="light-blue-text text-darken-4">{{d.name}}</h5>
+        <h5 class="grey-text text-darken-4">{{d.name}}</h5>
         <table class="responsive-table striped">
           <thead>
 
@@ -72,7 +72,7 @@
           </tbody>
         </table>
 
-        <div class="redline red accent-4"></div>
+        <div class="redline yellow darken-3"></div>
 
       </div>
 

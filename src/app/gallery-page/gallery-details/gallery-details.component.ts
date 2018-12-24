@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import {ActivatedRoute, Params} from "@angular/router";
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-gallery-details',
@@ -14,7 +15,7 @@ export class GalleryDetailsComponent implements OnInit {
   text:string;
   price: number;
 
-  constructor(private route: ActivatedRoute, private titleService: Title) { }
+  constructor(private route: ActivatedRoute, private titleService: Title, private location: Location) { }
 
   ngOnInit() {
 
@@ -25,6 +26,10 @@ export class GalleryDetailsComponent implements OnInit {
       this.text = params['text'];
       this.price = +params['price']
     })
+  }
+
+  goBack(){
+    this.location.back()
   }
 
 }

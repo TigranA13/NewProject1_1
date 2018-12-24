@@ -1,12 +1,12 @@
 [
   {
-    "homeLinkName":"Home",
-    "galleryLinkName":"Gallery",
-    "galleryDetailsLinkName":"Gallery Details 1",
-    "mainH4":"Gallery Details 1",
+    "homeLinkName":"Главная",
+    "galleryLinkName":"Каталог техники",
+    "galleryDetailsLinkName":"Автокраны",
+    "mainH4":"Автокраны",
     "p_1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "button_1":"Contact Us",
-    "button_2":"Details"
+    "button_1":"Связаться",
+    "button_2":"Детали"
   },
   [
     {

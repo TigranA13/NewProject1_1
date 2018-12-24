@@ -14,7 +14,7 @@ export class AboutPageComponent implements OnInit {
   constructor(private titleService: Title, private aboutservice: AboutPageService) { }
 
   ngOnInit() {
-    this.titleService.setTitle( "About Us" );
+    this.titleService.setTitle( "О НАС" );
 
     this.aboutservice.getData().subscribe(data=>{
       this.data = data;

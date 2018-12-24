@@ -12,63 +12,71 @@
 
 
   <!--footer navbar-->
-  <nav class="nav  light-blue darken-4" id="centerNav">
-  <div class="nav-wrapper ">
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul id="nav-mobile" class=" hide-on-med-and-down">
-      <li routerLinkActive="active"><a routerLink="/home">{{d.home}}</a></li>
-      <li routerLinkActive="active"><a routerLink="/aboutus">{{d.aboutus}}</a></li>
-      <li routerLinkActive="active"><a routerLink="/gallery">{{d.gallery}}</a></li>
-      <li routerLinkActive="active"><a routerLink="/services">{{d.services}}</a></li>
-      <li routerLinkActive="active"><a routerLink="/pricelist">{{d.pricelist}}</a></li>
-      <li routerLinkActive="active"><a routerLink="/contacts">{{d.contacts}}</a></li>
-    </ul>
-  </div>
-</nav>
-<ul class="sidenav" id="mobile-demo">
-  <li><a routerLink="/home">{{d.home}}</a></li>
-  <li><a routerLink="/aboutus">{{d.aboutus}}</a></li>
-  <li><a routerLink="/gallery">{{d.gallery}}</a></li>
-  <li><a routerLink="/services">{{d.services}}</a></li>
-  <li><a routerLink="/pricelist">{{d.pricelist}}</a></li>
-  <li><a routerLink="/contacts">{{d.contacts}}</a></li>
-</ul>
-<div class="line red accent-4"></div>
+  <nav class="nav" id="centerNav" >
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="hide-on-med-and-down">
+            <li routerLinkActive="active"><a routerLink="/home">{{d.home | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/aboutus">{{d.aboutus | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/gallery">{{d.gallery | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/services">{{d.services | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/pricelist">{{d.pricelist | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/contacts">{{d.contacts | uppercase}}</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a routerLink="/home">{{d.home}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/aboutus">{{d.aboutus}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/gallery">{{d.gallery}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/services">{{d.services}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/pricelist">{{d.pricelist}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/contacts">{{d.contacts}}</a></li>
+      </ul>
+      <div class="line"></div>
+
 
   <!--footer-->
 <footer class="page-footer  blue-grey darken-4 ">
-  <div class="container">
+  <div class="container ">
     <div class="row ">
-      <div class="col l2 s12">
+      <div class="col s12  l6  icons">
+        <div class="row">
+          <img src={{d.linksTitle}} >
+        </div>
+
+            <a href={{d.fbLink}}>
+                <img src={{d.fbIcon}} alt="Facebook">
+              </a>
+              <a href={{d.instagramLink}}>
+                <img src={{d.instagramIcon}} alt="Instagram">
+              </a>
+              <a href={{d.vkLink}}>
+                <img src={{d.vkIcon}} alt="VK">
+              </a>
+      </div>
+
+      <div class="col s12  l2 ">
         <h5 class="white-text">{{d.addressTitle}}</h5>
         <p class="grey-text text-lighten-4">{{d.addressTxt}}</p>
       </div>
-      <div class="col l2 s12">
+      <div class="col s12 l2 ">
         <h5 class="white-text">{{d.phoneTitle}}</h5>
         <p class="grey-text text-lighten-4">{{d.phoneTxt}}</p>
       </div>
-      <div class="col l2 s12">
+      <div class="col s12 l2 ">
         <h5 class="white-text">{{d.emailTitle}}</h5>
         <a href={{d.emailLink}}>
           <p class="grey-text text-lighten-4">{{d.emailTxt}}</p>
         </a>
 
       </div>
-      <div class="col l4 offset-l2 s12 icons">
-        <h5 class="white-text">{{d.linksTitle}}</h5>
-            <a class="grey-text text-lighten-3" href={{d.fbLink}}>
-              <img src={{d.fbIcon}} alt="Facebook">
-            </a>
-            <a class="grey-text text-lighten-3" href={{d.vkLink}}>
-              <img src={{d.vkIcon}} alt="VK">
-            </a>
-            <a class="grey-text text-lighten-3" href={{d.twitterLink}}>
-              <img src={{d.twitterIcon}} alt="Twitter">
-            </a>
-            <a class="grey-text text-lighten-3" href={{d.telegramLink}}>
-              <img src={{d.telegramIcon}} alt="Telegram">
-            </a>
-      </div>
+
     </div>
   </div>
 

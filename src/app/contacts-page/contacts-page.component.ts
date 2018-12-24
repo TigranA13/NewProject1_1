@@ -14,7 +14,7 @@ export class ContactsPageComponent implements OnInit {
   constructor(private titleService: Title, private contactsservice: ContactsService) { }
 
   ngOnInit() {
-    this.titleService.setTitle( "Contacts" );
+    this.titleService.setTitle( "КОНТАКТЫ" );
     this.contactsservice.getData().subscribe(data=>{
       this.data = data;
     })

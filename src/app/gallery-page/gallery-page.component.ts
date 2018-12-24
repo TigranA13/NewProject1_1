@@ -15,7 +15,7 @@ export class GalleryPageComponent implements OnInit {
   constructor(private titleService: Title, private galleryservice: GalleryService) { }
 
   ngOnInit() {
-    this.titleService.setTitle( "Gallery" );
+    this.titleService.setTitle( "КАТАЛОГ ТЕХНИКИ" );
     this.galleryservice.getData().subscribe(data=>{
       this.data = data[1];
       this.info.push(data[0])

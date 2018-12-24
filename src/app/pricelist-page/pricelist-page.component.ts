@@ -14,7 +14,7 @@ export class PricelistPageComponent implements OnInit {
   constructor(private titleService: Title, private pricelistservice: PricelistService) { }
 
   ngOnInit() {
-    this.titleService.setTitle( "Price List" );
+    this.titleService.setTitle( "ПРАЙС-ЛИСТ" );
     this.pricelistservice.getData().subscribe(data=>{
       this.data=data;
     })

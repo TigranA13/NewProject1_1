@@ -14,7 +14,7 @@
   </div>
 
   <div class="container ">
-    <h4 class="red-text text-accent-4 left-align main">{{i.mainH4}}</h4>
+    <h4 class="yellow-text text-darken-3 left-align main">{{i.mainH4}}</h4>
     <div class="row ">
       <p>{{i.p_1}}</p>
       <div class="col s12 m6 xl4 center-align" *ngFor="let d of data">
@@ -29,7 +29,7 @@
         </div>
         <div class="card-content cars">
           <h6 >{{d.price | currency:'RUB '}}</h6>
-          <h5 class="red-text text-accent-4">{{d.text}}</h5>
+          <h5 class="yellow-text text-darken-3">{{d.text}}</h5>
           <table class="responsive-table striped centered">
             <tbody>
             <tr>
@@ -49,12 +49,12 @@
         </div>
         <div class="row">
           <div class="col s12 xl6">
-            <a routerLink="/contacts" class="waves-effect waves-light btn-large red darken-4">{{i.button_1}}</a>
+            <a routerLink="/contacts" class="waves-effect waves-light btn-large  contactBtn">{{i.button_1}}</a>
           </div>
           <div class="col s12 xl6">
             <a routerLink="/details"
                [queryParams]="{name: d.name, img: d.img, text: d.text, price: d.price}"
-               class="waves-effect waves-light btn-large light-blue darken-3">{{i.button_2}}</a>
+               class="waves-effect waves-light btn-large  detailsBtn">{{i.button_2}}</a>
           </div>
         </div>
 

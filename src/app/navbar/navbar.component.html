@@ -1,57 +1,67 @@
 <div *ngFor="let d of data">
-  <nav class="nav container z-depth-0 transparent" id="topNav">
-    <div class="row">
-      <div class="col s12 m6 l2">
-        <a  routerLink="/home" class="brand-logo red-text text-accent-4">{{d.logo}}</a>
-      </div>
-      <div class="col  m6 l6 hide-on-med-and-down ">
-        <h4 class="black-text right phoneTxt">+7 986 777 555 </h4>
-        <img class="right" id="phoneIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDqyu5ogQOciSMDB5xG3pOiy6INWeyTxs5E50JY6gcpdMSVr5" alt="">
 
-      </div>
-      <div class="col  m12 l4 hide-on-med-and-down icons">
-            <a class="grey-text text-lighten-3" href={{d.fbLink}}>
-              <img src={{d.fbIcon}} alt="Facebook">
-            </a>
-            <a class="grey-text text-lighten-3" href={{d.vkLink}}>
-              <img src={{d.vkIcon}} alt="VK">
-            </a>
-            <a class="grey-text text-lighten-3" href={{d.twitterLink}}>
-              <img src={{d.twitterIcon}} alt="Twitter">
-            </a>
-            <a class="grey-text text-lighten-3" href={{d.telegramLink}}>
-              <img src={{d.telegramIcon}} alt="Telegram">
-            </a>
-      </div>
+    <div class="row head">
+      <nav class=" had-container z-depth-0 transparent" id="topNav">
+        <div class="col s12 m4 xl4">
+          <a  routerLink="/home" class="brand-logo red-text text-accent-4">
+            <img src={{d.logo}} class="responsive-img ">
+          </a>
+        </div>
+        <div class="col  m4 xl3 hide-on-med-and-down phone right-align">
+          <a href="">
+            <img src={{d.phoneIcon}}>
+            <span>+7 986 777 555</span>
+          </a>
+
+        </div>
+        <div class="col  m2 xl3 hide-on-med-and-down icons">
+              <a href={{d.fbLink}}>
+                <img src={{d.fbIcon}} alt="Facebook">
+              </a>
+              <a href={{d.instagramLink}}>
+                <img src={{d.instagramIcon}} alt="Instagram">
+              </a>
+              <a href={{d.vkLink}}>
+                <img src={{d.vkIcon}} alt="VK">
+              </a>
+        </div>
+        <div class="col  m2 xl2 hide-on-med-and-down zakzvonok">
+          <button type="button" class="btn z-depth-0">{{d.zakazatZvonok}}</button>
+        </div>
+      </nav>
     </div>
-  </nav>
-  <nav class="nav  light-blue darken-3" id="centerNav">
-    <div class="nav-wrapper ">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class=" hide-on-med-and-down">
-        <li routerLinkActive="active"><a routerLink="/home">{{d.home}}</a></li>
-        <li routerLinkActive="active"><a routerLink="/aboutus">{{d.aboutus}}</a></li>
-        <li routerLinkActive="active"><a routerLink="/gallery">{{d.gallery}}</a></li>
-        <li routerLinkActive="active"><a routerLink="/services">{{d.services}}</a></li>
-        <li routerLinkActive="active"><a routerLink="/pricelist">{{d.pricelist}}</a></li>
-        <li routerLinkActive="active"><a routerLink="/contacts">{{d.contacts}}</a></li>
+
+
+
+      <nav class="nav" id="centerNav">
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="hide-on-med-and-down">
+            <li routerLinkActive="active"><a routerLink="/home">{{d.home | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/aboutus">{{d.aboutus | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/gallery">{{d.gallery | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/services">{{d.services | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/pricelist">{{d.pricelist | uppercase}}</a></li>
+            <li routerLinkActive="active"><a routerLink="/contacts">{{d.contacts | uppercase}}</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a routerLink="/home">{{d.home}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/aboutus">{{d.aboutus}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/gallery">{{d.gallery}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/services">{{d.services}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/pricelist">{{d.pricelist}}</a></li>
+        <li><div class="divider"></div></li>
+        <li><a routerLink="/contacts">{{d.contacts}}</a></li>
       </ul>
-    </div>
-  </nav>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a routerLink="/home">{{d.home}}</a></li>
-    <li><div class="divider"></div></li>
-    <li><a routerLink="/aboutus">{{d.aboutus}}</a></li>
-    <li><div class="divider"></div></li>
-    <li><a routerLink="/gallery">{{d.gallery}}</a></li>
-    <li><div class="divider"></div></li>
-    <li><a routerLink="/services">{{d.services}}</a></li>
-    <li><div class="divider"></div></li>
-    <li><a routerLink="/pricelist">{{d.pricelist}}</a></li>
-    <li><div class="divider"></div></li>
-    <li><a routerLink="/contacts">{{d.contacts}}</a></li>
-  </ul>
-  <div class="line red accent-4"></div>
+      <div class="line"></div>
+
+
 
 </div>
 

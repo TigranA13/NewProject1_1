@@ -1,12 +1,13 @@
 [
   {
-    "logo":"Logo",
+
     "home":"Home",
-    "aboutus":"About Us",
-    "gallery":"Gallery",
-    "services":"Services",
-    "pricelist":"Price List",
-    "contacts":"Contacts",
+    "home":"ГЛАВНАЯ",
+    "aboutus":"О НАС",
+    "gallery":"Каталог техники",
+    "services":"Услуги",
+    "pricelist":"Прайс-лист",
+    "contacts":"Контакты",
     "addressTitle":"Address",
     "addressTxt":"Some address ...",
     "phoneTitle":"Phone",
@@ -14,15 +15,13 @@
     "emailTitle":"Email",
     "emailTxt":"info@domain.com",
     "emailLink":"mailto:info@domain.com",
-    "linksTitle":"Links",
-    "fbIcon":"https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-128.png",
+    "linksTitle":"./assets/images/logo.png",
+    "fbIcon":"./assets/images/facebook.png",
     "fbLink":"https://facebook.com",
-    "vkIcon":"https://vignette.wikia.nocookie.net/sonicthehedhug/images/f/fc/VK.png/revision/latest?cb=20170328054841&path-prefix=ru",
+    "vkIcon":"./assets/images/vk.png",
     "vkLink":"https://vk.com",
-    "twitterIcon":"http://www.iconarchive.com/download/i58881/dakirby309/windows-8-metro/Web-Twitter-alt-4-Metro.ico",
-    "twitterLink":"https://twitter.com",
-    "telegramIcon":"https://cdn1.iconfinder.com/data/icons/social-flat-dual-vertical/512/telegram-128.png",
-    "telegramLink":"https://telegram.org",
+    "instagramIcon":"./assets/images/instagram.png",
+    "instagramLink":"https://instagram.com",
     "mailTo":"mailto:info@domain.com"
   }
 

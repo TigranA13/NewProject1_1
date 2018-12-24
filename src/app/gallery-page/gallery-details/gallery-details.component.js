@@ -7,9 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var GalleryDetailsComponent = (function () {
-    function GalleryDetailsComponent(route, titleService) {
+    function GalleryDetailsComponent(route, titleService, location) {
         this.route = route;
         this.titleService = titleService;
+        this.location = location;
     }
     GalleryDetailsComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -20,6 +21,9 @@ var GalleryDetailsComponent = (function () {
             _this.text = params['text'];
             _this.price = +params['price'];
         });
+    };
+    GalleryDetailsComponent.prototype.goBack = function () {
+        this.location.back();
     };
     GalleryDetailsComponent = __decorate([
         core_1.Component({

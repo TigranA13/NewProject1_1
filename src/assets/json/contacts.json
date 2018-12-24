@@ -1,8 +1,8 @@
 [
   {
-    "homeLinkName":"Home",
-    "contactsLinkName":"Contacts",
-    "mainH4":"Contacts",
+    "homeLinkName":"Главная",
+    "contactsLinkName":"Контакты",
+    "mainH4":"Контакты",
     "addressTitle":"Address",
     "addressTxt":"Some address ...",
     "phoneTitle":"Phone",

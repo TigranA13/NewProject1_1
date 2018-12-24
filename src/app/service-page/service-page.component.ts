@@ -14,7 +14,7 @@ export class ServicePageComponent implements OnInit {
   constructor(private titleService: Title, private servicesService: ServicePageService) { }
 
   ngOnInit() {
-    this.titleService.setTitle( "Services" );
+    this.titleService.setTitle( "УСЛУГИ" );
     this.servicesService.getData().subscribe(data=>{
       this.data = data
     })
