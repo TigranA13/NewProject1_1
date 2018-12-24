@@ -22,6 +22,7 @@ import { GalleryD6Component } from './gallery-page/gallery-d6/gallery-d6.compone
 import { GalleryD7Component } from './gallery-page/gallery-d7/gallery-d7.component';
 import { GalleryD8Component } from './gallery-page/gallery-d8/gallery-d8.component';
 import { GalleryD9Component } from './gallery-page/gallery-d9/gallery-d9.component';
+import { GalleryDetailsComponent } from './gallery-page/gallery-details/gallery-details.component';
 
 
 
@@ -44,7 +45,8 @@ import { GalleryD9Component } from './gallery-page/gallery-d9/gallery-d9.compone
     GalleryD6Component,
     GalleryD7Component,
     GalleryD8Component,
-    GalleryD9Component
+    GalleryD9Component,
+    GalleryDetailsComponent
   ],
   imports: [
     BrowserModule,

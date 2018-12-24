@@ -7,22 +7,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var GalleryD3Component = (function () {
-    function GalleryD3Component(galleryservice) {
+    function GalleryD3Component(galleryservice, titleService) {
         this.galleryservice = galleryservice;
+        this.titleService = titleService;
         this.info = [];
         this.data = [];
     }
     GalleryD3Component.prototype.ngOnInit = function () {
         var _this = this;
+        this.titleService.setTitle("Gallery Details 3");
         this.galleryservice.getData3().subscribe(function (data) {
-            _this.data = data;
+            _this.data = data[1];
+            _this.info.push(data[0]);
         });
-        this.galleryservice.getInfo3().subscribe(function (data) {
-            _this.info = data;
-        });
-        $(document).ready(function () {
-            $('.modal').modal();
-        });
+        setTimeout(function () {
+            $(document).ready(function () {
+                $('.modal').modal();
+            });
+        }, 500);
     };
     GalleryD3Component = __decorate([
         core_1.Component({

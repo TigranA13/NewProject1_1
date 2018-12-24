@@ -19,6 +19,7 @@ var gallery_d6_component_1 = require("./gallery-d6/gallery-d6.component");
 var gallery_d7_component_1 = require("./gallery-d7/gallery-d7.component");
 var gallery_d8_component_1 = require("./gallery-d8/gallery-d8.component");
 var gallery_d9_component_1 = require("./gallery-d9/gallery-d9.component");
+var gallery_details_component_1 = require("./gallery-details/gallery-details.component");
 var routes = [
     { path: 'galleryD', component: gallery_d_component_1.GalleryDComponent },
     { path: 'galleryD2', component: gallery_d2_component_1.GalleryD2Component },
@@ -29,6 +30,7 @@ var routes = [
     { path: 'galleryD7', component: gallery_d7_component_1.GalleryD7Component },
     { path: 'galleryD8', component: gallery_d8_component_1.GalleryD8Component },
     { path: 'galleryD9', component: gallery_d9_component_1.GalleryD9Component },
+    { path: 'details', component: gallery_details_component_1.GalleryDetailsComponent }
 ];
 var GalleryRoutingModule = (function () {
     function GalleryRoutingModule() {

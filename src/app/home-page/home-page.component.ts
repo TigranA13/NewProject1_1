@@ -15,6 +15,10 @@ export class HomePageComponent implements OnInit {
 
   data:any=[];
   galleryData: any=[];
+  data2:any=[];
+  data3:any=[];
+  data4:any=[];
+
 
   constructor(private titleService: Title, private homeservice: HomePageService, private galleryservice: GalleryService) { }
 
@@ -22,19 +26,30 @@ export class HomePageComponent implements OnInit {
 
     this.titleService.setTitle( "Home" );
     this.homeservice.getData().subscribe(data=>{
-      this.data = data
+      this.data.push(data[0]);
+      this.data2 = data[1];
+      this.data3 = data[2];
+      this.data4 = data[3];
     });
     this.galleryservice.getData().subscribe(data=>{
-      this.galleryData = data;
+      this.galleryData = data[1];
     });
 
     $(document).ready(function(){
       $('.materialboxed').materialbox();
-      $('.carousel').carousel({
-        indicators: true,
-        fullWidth:true,
-        // noWrap: true
-      });
+
+      setTimeout(function () {
+        $('.modal').modal();
+        $('.carousel').carousel({
+          indicators: true,
+          fullWidth:true,
+          // noWrap: true
+        });
+        //  setInterval(function(){
+        //    $('.carousel').carousel('next');
+        // }, 4500)
+      }, 500);
+
       // move next carousel
       $('.moveNextCarousel').click(function(e){
         e.preventDefault();
@@ -48,9 +63,7 @@ export class HomePageComponent implements OnInit {
         e.stopPropagation();
         $('.carousel').carousel('prev');
       });
-      // setInterval(function(){
-      //   $('.carousel').carousel('next');
-      // }, 5000)
+
     });
 
   }

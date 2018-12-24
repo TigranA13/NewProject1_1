@@ -17,10 +17,8 @@ export class GalleryPageComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle( "Gallery" );
     this.galleryservice.getData().subscribe(data=>{
-      this.data = data;
-    });
-    this.galleryservice.getInfo().subscribe(data=>{
-      this.info = data;
+      this.data = data[1];
+      this.info.push(data[0])
     });
   }
 

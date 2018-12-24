@@ -6,31 +6,75 @@
     "sImg4":"https://via.placeholder.com/500x200",
     "h4_1":"Some Text Here 1",
     "h4_2":"Some Text Here 2",
-    "cardImg1":"https://via.placeholder.com/300x200",
-    "h5_1":"Text here 1",
-    "cardImg2":"https://via.placeholder.com/300x200",
-    "h5_2":"Text here 2",
-    "cardImg3":"https://via.placeholder.com/300x200",
-    "h5_3":"Text here 3",
     "h4_3":"Some Text Here 3",
-    "smallImg1":"https://via.placeholder.com/100x100",
-    "smallImg2":"https://via.placeholder.com/100x100",
-    "smallImg3":"https://via.placeholder.com/100x100",
-    "smallImg4":"https://via.placeholder.com/100x100",
-    "smallImg5":"https://via.placeholder.com/100x100",
-    "smallImg6":"https://via.placeholder.com/100x100",
-    "h4_4":"Some Text Here 4",
-    "lastCardImg1":"https://via.placeholder.com/300x200",
-    "lastH5_1":"Some Title Here 1",
-    "lastP1":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
-    "lastCardImg2":"https://via.placeholder.com/300x200",
-    "lastH5_2":"Some Title Here 2",
-    "lastP2":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
-    "lastCardImg3":"https://via.placeholder.com/300x200",
-    "lastH5_3":"Some Title Here 3",
-    "lastP3":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
-    "lastCardImg4":"https://via.placeholder.com/300x200",
-    "lastH5_4":"Some Title Here 4",
-    "lastP4":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
-  }
+    "h4_4":"Some Text Here 4"
+
+  },
+  [
+    {
+      "cardImg":"https://via.placeholder.com/300x200",
+      "h5":"Text here 1",
+      "p":"Some p here ......."
+    },
+    {
+      "cardImg":"https://via.placeholder.com/300x200",
+      "h5":"Text here 2",
+      "p":"Some p here ......."
+    },
+    {
+      "cardImg":"https://via.placeholder.com/300x200",
+      "h5":"Text here 3",
+      "p":"Some p here ......."
+    }
+
+  ],
+
+  [
+    {
+      "smallImg":"https://via.placeholder.com/100x100"
+    },
+    {
+      "smallImg":"https://via.placeholder.com/100x100"
+    },
+    {
+      "smallImg":"https://via.placeholder.com/100x100"
+    },
+    {
+      "smallImg":"https://via.placeholder.com/100x100"
+    },
+    {
+      "smallImg":"https://via.placeholder.com/100x100"
+    },
+    {
+      "smallImg":"https://via.placeholder.com/100x100"
+    }
+  ],
+
+  [
+    {
+      "lastCardImg":"https://via.placeholder.com/300x200",
+      "lastH5":"Some Title Here 1",
+      "lastP":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
+
+    },
+    {
+      "lastCardImg":"https://via.placeholder.com/300x200",
+      "lastH5":"Some Title Here 2",
+      "lastP":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
+
+    },
+    {
+      "lastCardImg":"https://via.placeholder.com/300x200",
+      "lastH5":"Some Title Here 3",
+      "lastP":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
+
+    },
+    {
+      "lastCardImg":"https://via.placeholder.com/300x200",
+      "lastH5":"Some Title Here 4",
+      "lastP":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
+
+    }
+  ]
+
 ]

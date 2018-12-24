@@ -17,7 +17,6 @@ export class NavbarComponent implements OnInit {
     this.navservice.getData().subscribe(data=>{
       this.data = data;
     });
-
   }
 
 }

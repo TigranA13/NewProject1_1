@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import {GalleryService} from "../gallery.service";
 
 declare let $:any;
@@ -13,19 +14,20 @@ export class GalleryD4Component implements OnInit {
   info:any=[];
   data:any=[];
 
-  constructor( private galleryservice: GalleryService) { }
+  constructor( private galleryservice: GalleryService, private titleService: Title) { }
 
 
   ngOnInit() {
+    this.titleService.setTitle( "Gallery Details 4" );
     this.galleryservice.getData4().subscribe(data=>{
-      this.data = data
-    })
-    this.galleryservice.getInfo4().subscribe(data=>{
-      this.info = data
-    })
-    $(document).ready(function(){
-      $('.modal').modal();
+      this.data = data[1];
+      this.info.push(data[0])
     });
+    setTimeout(()=>{
+      $(document).ready(function(){
+        $('.modal').modal();
+      });
+    }, 500)
   }
 
 }

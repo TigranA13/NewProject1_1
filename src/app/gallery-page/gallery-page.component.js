@@ -17,10 +17,8 @@ var GalleryPageComponent = (function () {
         var _this = this;
         this.titleService.setTitle("Gallery");
         this.galleryservice.getData().subscribe(function (data) {
-            _this.data = data;
-        });
-        this.galleryservice.getInfo().subscribe(function (data) {
-            _this.info = data;
+            _this.data = data[1];
+            _this.info.push(data[0]);
         });
     };
     GalleryPageComponent = __decorate([

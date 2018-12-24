@@ -40,36 +40,6 @@ var GalleryService = (function () {
     GalleryService.prototype.getData9 = function () {
         return this.http.get('./assets/json/gallery/gallery-d9.json');
     };
-    GalleryService.prototype.getInfo = function () {
-        return this.http.get('./assets/json/gallery/gallery-info.json');
-    };
-    GalleryService.prototype.getInfo1 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d-info.json');
-    };
-    GalleryService.prototype.getInfo2 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d2-info.json');
-    };
-    GalleryService.prototype.getInfo3 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d3-info.json');
-    };
-    GalleryService.prototype.getInfo4 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d4-info.json');
-    };
-    GalleryService.prototype.getInfo5 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d5-info.json');
-    };
-    GalleryService.prototype.getInfo6 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d6-info.json');
-    };
-    GalleryService.prototype.getInfo7 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d7-info.json');
-    };
-    GalleryService.prototype.getInfo8 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d8-info.json');
-    };
-    GalleryService.prototype.getInfo9 = function () {
-        return this.http.get('./assets/json/gallery/gallery-d9-info.json');
-    };
     GalleryService = __decorate([
         core_1.Injectable({
             providedIn: 'root'

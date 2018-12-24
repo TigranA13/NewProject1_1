@@ -12,6 +12,7 @@ import {GalleryD6Component} from "./gallery-d6/gallery-d6.component";
 import {GalleryD7Component} from "./gallery-d7/gallery-d7.component";
 import {GalleryD8Component} from "./gallery-d8/gallery-d8.component";
 import {GalleryD9Component} from "./gallery-d9/gallery-d9.component";
+import {GalleryDetailsComponent} from "./gallery-details/gallery-details.component";
 
 
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path:'galleryD7', component: GalleryD7Component},
   {path:'galleryD8', component: GalleryD8Component},
   {path:'galleryD9', component: GalleryD9Component},
+  {path:'details', component: GalleryDetailsComponent}
 
 ];
 

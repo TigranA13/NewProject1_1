@@ -24,12 +24,14 @@
         </div>
 
       <!--Main Content-->
+
+      <!--Gallery Part-->
       <h4 class="header red-text text-accent-4 center-align firstH4">{{d.h4_1}}</h4>
     <div class="row center-align " >
 
       <div class="col s12 m4" *ngFor="let gd of galleryData">
         <a routerLink={{gd.link}}>
-          <div class="card">
+          <div class="card ">
             <div class="card-image">
               <img src={{gd.img}}>
             </div>
@@ -42,164 +44,84 @@
 
     </div>
 
+<!--Second part-->
       <div class="redline red accent-4"></div>
       <h4 class="header red-text text-accent-4 center-align">{{d.h4_2}}</h4>
 
         <div class="row center-align">
-          <div class="col s12 m4 ">
-            <a href="#">
+          <div class="col s12 m4 " *ngFor="let d2 of data2">
+            <a href="#{{d2.h5}}" class="modal-trigger">
               <div class="card">
                 <div class="card-image">
-                  <img src={{d.cardImg1}}>
+                  <img src={{d2.cardImg}}>
                 </div>
               </div>
               <div class="card-content secondCards">
-                <h5 class="black-text">{{d.h5_1}}</h5>
+                <h5 class="black-text">{{d2.h5}}</h5>
               </div>
             </a>
-          </div>
-          <div class="col s12 m4 ">
-            <a href="#">
-              <div class="card">
-                <div class="card-image">
-                  <img src={{d.cardImg2}}>
-                </div>
+
+            <!-- Modal Structure -->
+            <div id="{{d2.h5}}" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <img src={{d2.cardImg}}>
+                <h4>{{d2.h5}}</h4>
+                <p>{{d2.p}}</p>
               </div>
-              <div class="card-content secondCards">
-                <h5 class="black-text">{{d.h5_2}}</h5>
+              <div class="modal-footer">
+                <a  class="modal-action modal-close waves-effect waves-grey btn-flat"><i class="material-icons">close</i></a>
               </div>
-            </a>
-          </div>
-          <div class="col s12 m4 ">
-            <a href="#">
-              <div class="card">
-                <div class="card-image">
-                  <img src={{d.cardImg3}}>
-                </div>
-              </div>
-              <div class="card-content secondCards">
-                <h5 class="black-text">{{d.h5_3}}</h5>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
 
 
+
+<!--Img s part-->
       <div class="redline red accent-4"></div>
       <h4 class="header red-text text-accent-4 center-align">{{d.h4_3}}</h4>
 
         <div class="row center-align">
-
-          <div class="col s6 m2 hoverable">
+          <div class="col s6 m2 hoverable" *ngFor="let d3 of data3">
               <div class="card">
                 <div class="card-image">
-                  <img class="materialboxed" src={{d.smallImg1}}>
+                  <img class="materialboxed" src={{d3.smallImg}}>
                 </div>
               </div>
           </div>
-          <div class="col s6 m2 hoverable">
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed" src={{d.smallImg2}}>
-                </div>
-              </div>
-          </div>
-          <div class="col s6 m2 hoverable">
+        </div>
 
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed" src={{d.smallImg3}}>
-                </div>
-              </div>
 
-          </div>
-          <div class="col s6 m2 hoverable">
-
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed" src={{d.smallImg4}}>
-                </div>
-              </div>
-
-          </div>
-          <div class="col s6 m2 hoverable">
-
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed" src={{d.smallImg5}}>
-                </div>
-              </div>
-
-          </div>
-          <div class="col s6 m2 hoverable">
-
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed" src={{d.smallImg6}}>
-                </div>
-              </div>
-
-          </div>
-
-      </div>
-
+      <!--News Part-->
     <div class="redline red accent-4"></div>
     <h4 class="header red-text text-accent-4 center-align">{{d.h4_4}}</h4>
 
       <div class="row center-align">
-        <div class="col s12 m3 ">
-          <a href="#">
+        <div class="col s12 m3 " *ngFor="let d4 of data4">
+          <a href="#{{d4.lastH5}}" class="modal-trigger">
             <div class="card">
               <div class="card-image">
-                <img src={{d.lastCardImg1}}>
+                <img src={{d4.lastCardImg}}>
               </div>
             </div>
             <div class="card-content thirdCards">
-              <h5>{{d.lastH5_1}}</h5>
-              <p class="black-text">{{d.lastP1}}</p>
+              <h5>{{d4.lastH5}}</h5>
+              <p class="black-text">{{d4.lastP}}</p>
             </div>
           </a>
-        </div>
-        <div class="col s12 m3 ">
-          <a href="#">
-            <div class="card">
-              <div class="card-image">
-                <img src={{d.lastCardImg2}}>
-              </div>
-            </div>
-            <div class="card-content thirdCards">
-              <h5>{{d.lastH5_2}}</h5>
-              <p class="black-text">{{d.lastP2}}</p>
-            </div>
-          </a>
-        </div>
-        <div class="col s12 m3 ">
-          <a href="#">
-            <div class="card">
-              <div class="card-image">
-                <img src={{d.lastCardImg3}}>
-              </div>
-            </div>
-            <div class="card-content thirdCards">
-              <h5>{{d.lastH5_3}}</h5>
-              <p class="black-text">{{d.lastP3}}</p>
-            </div>
-          </a>
-        </div>
-        <div class="col s12 m3 ">
-          <a href="#">
-            <div class="card">
-              <div class="card-image">
-                <img src={{d.lastCardImg4}}>
-              </div>
-            </div>
-            <div class="card-content thirdCards">
-              <h5>{{d.lastH5_4}}</h5>
-              <p class="black-text">{{d.lastP4}}</p>
-            </div>
-          </a>
-        </div>
 
+          <!-- Modal Structure -->
+          <div id="{{d4.lastH5}}" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <img src={{d4.lastCardImg}}>
+              <h4>{{d4.lastH5}}</h4>
+              <p>{{d4.lastP}}</p>
+            </div>
+            <div class="modal-footer">
+              <a  class="modal-action modal-close waves-effect waves-grey btn-flat"><i class="material-icons">close</i></a>
+            </div>
+          </div>
+        </div>
       </div>
 
 </div>
