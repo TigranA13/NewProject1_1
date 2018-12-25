@@ -1,27 +1,27 @@
 
 <div *ngFor="let d of data">
+  <!--Sliders-->
+  <div class="carousel carousel-slider hide-on-small-only " data-indicators="true">
+    <div class="carousel-fixed-item center middle-indicator">
+      <div class="left">
+        <a href="#" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator">
+          <i class="material-icons left  middle-indicator-text">chevron_left</i>
+        </a>
+      </div>
 
-    <div class="container transparent">
-      <!--Sliders-->
-        <div class="carousel carousel-slider hide-on-small-only " data-indicators="true">
-          <div class="carousel-fixed-item center middle-indicator">
-            <div class="left">
-              <a href="#" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator">
-                <i class="material-icons left  middle-indicator-text">chevron_left</i>
-              </a>
-            </div>
+      <div class="right">
+        <a href="#" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
+          <i class="material-icons right middle-indicator-text">chevron_right</i>
+        </a>
+      </div>
+    </div>
+    <a class="carousel-item" href="#"><img class="responsive-img" src={{d.sImg1}}></a>
+    <a class="carousel-item" href="#"><img  class="responsive-img" src={{d.sImg2}}></a>
+    <a class="carousel-item" href="#"><img class="responsive-img" src={{d.sImg3}}></a>
+    <a class="carousel-item" href="#"><img  class="responsive-img" src={{d.sImg4}}></a>
+  </div>
 
-            <div class="right">
-              <a href="#" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
-                <i class="material-icons right middle-indicator-text">chevron_right</i>
-              </a>
-            </div>
-          </div>
-          <a class="carousel-item" href="#"><img class="responsive-img" src={{d.sImg1}}></a>
-          <a class="carousel-item" href="#"><img  class="responsive-img" src={{d.sImg2}}></a>
-          <a class="carousel-item" href="#"><img class="responsive-img" src={{d.sImg3}}></a>
-          <a class="carousel-item" href="#"><img  class="responsive-img" src={{d.sImg4}}></a>
-        </div>
+  <div class="container transparent">
 
       <!--Main Content-->
 
@@ -30,15 +30,12 @@
     <div class="row center-align " >
 
           <div class="col s12 m6 l4" *ngFor="let gd of galleryData">
-            <div class="card z-depth-0 gallery">
+            <div class="card z-depth-0 gallery ">
                 <a  routerLink={{gd.link}} >
-                  <div class="card-image" [ngStyle]="{background: 'url('+gd.img2+')  center no-repeat'}">
-
-                      <img class="responsive-img" id="hoverableImg" src={{gd.img1}} >
-
-
+                  <div class="card-image " [ngStyle]="{background: 'url('+gd.img2+')  center no-repeat'}">
+                      <img  id="hoverableImg" src={{gd.img1}} >
                    </div>
-                  <div class="card-content transparent">
+                  <div class="card-content ">
                     <h6>{{gd.name}}</h6>
                   </div>
                 </a>
@@ -87,7 +84,7 @@
       <div class="redline grey darken-4"></div>
       <h4 class="header yellow-text text-darken-3 center-align">{{d.h4_3}}</h4>
 
-        <div class="row center-align">
+        <div class="row center-align" >
           <div class="col s6 m2" *ngFor="let d3 of data3">
               <div class="card z-depth-0">
                 <div class="card-image">
@@ -100,7 +97,7 @@
 
       <!--News Part-->
     <div class="redline grey darken-4"></div>
-    <h4 class="header yellow-text text-darken-3 center-align">{{d.h4_4}}</h4>
+      <h4 class="header yellow-text text-darken-3 center-align">{{d.h4_4}}</h4>
 
       <div class="row center-align">
         <div class="col s12 m3 " *ngFor="let d4 of data4">
@@ -133,7 +130,7 @@
         </div>
       </div>
 
-</div>
+    </div>
 </div>
 
 

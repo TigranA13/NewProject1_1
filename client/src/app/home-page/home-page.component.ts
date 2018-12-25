@@ -48,21 +48,22 @@ export class HomePageComponent implements OnInit {
         //  setInterval(function(){
         //    $('.carousel').carousel('next');
         // }, 4500)
+        // move next carousel
+        $('.moveNextCarousel').click(function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          $('.carousel').carousel('next');
+        });
+
+        // move prev carousel
+        $('.movePrevCarousel').click(function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          $('.carousel').carousel('prev');
+        });
       }, 500);
 
-      // move next carousel
-      $('.moveNextCarousel').click(function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        $('.carousel').carousel('next');
-      });
 
-      // move prev carousel
-      $('.movePrevCarousel').click(function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        $('.carousel').carousel('prev');
-      });
 
     });
 
