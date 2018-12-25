@@ -15,7 +15,7 @@ var GalleryDComponent = (function () {
     }
     GalleryDComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.titleService.setTitle("Gallery Details 1");
+        this.titleService.setTitle("Автокраны");
         this.galleryservice.getData1().subscribe(function (data) {
             _this.data = data[1];
             _this.info.push(data[0]);

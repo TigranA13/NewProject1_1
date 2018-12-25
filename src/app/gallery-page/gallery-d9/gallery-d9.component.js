@@ -15,7 +15,7 @@ var GalleryD9Component = (function () {
     }
     GalleryD9Component.prototype.ngOnInit = function () {
         var _this = this;
-        this.titleService.setTitle("Gallery Details 9");
+        this.titleService.setTitle("Телескопический погрузчик");
         this.galleryservice.getData9().subscribe(function (data) {
             _this.data = data[1];
             _this.info.push(data[0]);

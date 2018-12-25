@@ -9,6 +9,6 @@ export class FooterService {
   constructor(private http: HttpClient) { }
 
   getData(){
-    return this.http.get('./assets/json/footer.json')
+    return this.http.get('http://localhost:3000/footer')
   }
 }

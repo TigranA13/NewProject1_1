@@ -15,7 +15,7 @@ var GalleryD6Component = (function () {
     }
     GalleryD6Component.prototype.ngOnInit = function () {
         var _this = this;
-        this.titleService.setTitle("Gallery Details 6");
+        this.titleService.setTitle("Экскаваторы-погрузчики");
         this.galleryservice.getData6().subscribe(function (data) {
             _this.data = data[1];
             _this.info.push(data[0]);

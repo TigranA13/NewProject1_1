@@ -17,7 +17,7 @@ export class GalleryD2Component implements OnInit {
 
 
   ngOnInit() {
-    this.titleService.setTitle( "Gallery Details 2" );
+    this.titleService.setTitle( "Кран-манипулятор" );
     this.galleryservice.getData2().subscribe(data=>{
       this.data = data[1];
       this.info.push(data[0])

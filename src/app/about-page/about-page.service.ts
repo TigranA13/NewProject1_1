@@ -8,6 +8,6 @@ export class AboutPageService {
 
   constructor(private http: HttpClient) { }
   getData(){
-    return this.http.get('./assets/json/about.json')
+    return this.http.get('http://localhost:3000/about-page')
   }
 }

@@ -15,7 +15,7 @@ var GalleryD2Component = (function () {
     }
     GalleryD2Component.prototype.ngOnInit = function () {
         var _this = this;
-        this.titleService.setTitle("Gallery Details 2");
+        this.titleService.setTitle("Кран-манипулятор");
         this.galleryservice.getData2().subscribe(function (data) {
             _this.data = data[1];
             _this.info.push(data[0]);

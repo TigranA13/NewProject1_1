@@ -18,7 +18,7 @@ export class GalleryD8Component implements OnInit {
 
 
   ngOnInit() {
-    this.titleService.setTitle( "Gallery Details 8" );
+    this.titleService.setTitle( "Экскаваторы колесные" );
     this.galleryservice.getData8().subscribe(data=>{
       this.data = data[1];
       this.info.push(data[0])

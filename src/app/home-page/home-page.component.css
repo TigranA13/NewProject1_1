@@ -12,6 +12,13 @@ div.hoverable{
 .redline{
   height: 8px;
 }
+#hoverableImg{
+  min-height: 160px;
+  opacity: 1.1;
+}
+#hoverableImg:hover{
+  opacity: 0;
+}
 .gallery{
   min-height: 220px;
   white-space: nowrap;

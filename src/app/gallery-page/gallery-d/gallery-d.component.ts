@@ -19,7 +19,7 @@ export class GalleryDComponent implements OnInit {
 
 
   ngOnInit() {
-    this.titleService.setTitle( "Gallery Details 1" );
+    this.titleService.setTitle( "Автокраны" );
     this.galleryservice.getData1().subscribe(data=>{
       this.data = data[1];
       this.info.push(data[0])

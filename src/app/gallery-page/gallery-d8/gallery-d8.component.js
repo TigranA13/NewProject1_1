@@ -15,7 +15,7 @@ var GalleryD8Component = (function () {
     }
     GalleryD8Component.prototype.ngOnInit = function () {
         var _this = this;
-        this.titleService.setTitle("Gallery Details 8");
+        this.titleService.setTitle("Экскаваторы колесные");
         this.galleryservice.getData8().subscribe(function (data) {
             _this.data = data[1];
             _this.info.push(data[0]);

@@ -9,6 +9,6 @@ export class NavbarService {
   constructor(private http: HttpClient) { }
 
   getData(){
-    return this.http.get('./assets/json/navbar.json')
+    return this.http.get('http://localhost:3000/navbar')
   }
 }

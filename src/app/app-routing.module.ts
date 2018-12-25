@@ -10,11 +10,11 @@ import {GalleryDComponent} from "./gallery-page/gallery-d/gallery-d.component";
 
 
 const routes: Routes = [
-  {path:"", redirectTo:'home', pathMatch: 'full'},
-  {path:"home", component: HomePageComponent},
-  {path:"aboutus", component: AboutPageComponent},
-  {path:"gallery", component: GalleryPageComponent},
-  {path:"services", component: ServicePageComponent},
+  {path:"", redirectTo:'glavnaya', pathMatch: 'full'},
+  {path:"glavnaya", component: HomePageComponent},
+  {path:"o-nas", component: AboutPageComponent},
+  {path:"katalog", component: GalleryPageComponent},
+  {path:"uslugi", component: ServicePageComponent},
   {path:"pricelist", component: PricelistPageComponent},
   {path:"contacts", component: ContactsPageComponent},
   {path:"**",redirectTo:'home', pathMatch: 'full'}
