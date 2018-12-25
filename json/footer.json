@@ -1,0 +1,27 @@
+[
+  {
+
+    "home":"ГЛАВНАЯ",
+    "aboutus":"О НАС",
+    "gallery":"Каталог техники",
+    "services":"Услуги",
+    "pricelist":"Прайс-лист",
+    "contacts":"Контакты",
+    "addressTitle":"Address",
+    "addressTxt":"Some address ...",
+    "phoneTitle":"Phone",
+    "phoneTxt":"+00 000 000 000",
+    "emailTitle":"Email",
+    "emailTxt":"info@domain.com",
+    "emailLink":"mailto:info@domain.com",
+    "linksTitle":"./assets/images/logo.png",
+    "fbIcon":"./assets/images/facebook.png",
+    "fbLink":"https://facebook.com",
+    "vkIcon":"./assets/images/vk.png",
+    "vkLink":"https://vk.com",
+    "instagramIcon":"./assets/images/instagram.png",
+    "instagramLink":"https://instagram.com",
+    "mailTo":"mailto:info@domain.com"
+  }
+
+]

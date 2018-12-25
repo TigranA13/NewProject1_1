@@ -1,0 +1,89 @@
+<div *ngFor="let i of info">
+  <div class="container">
+    <nav class="white  z-depth-0">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a routerLink="/glavnaya" class=" black-text">{{i.homeLinkName}}</a>
+          <span class="black-text"> > </span>
+          <a routerLink="/pricelist" class=" black-text">{{i.priclistLinkName}}</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h4 class="yellow-text text-darken-3 left-align">{{i.mainH4}}</h4>
+        <div *ngFor="let d of data">
+          <h5 class="grey-text text-darken-4">{{d.name}}</h5>
+          <table class="responsive-table striped">
+            <thead>
+
+            <tr>
+              <th>{{d.th_1}}</th>
+              <th>{{d.th_2}}</th>
+              <th>{{d.th_3}}</th>
+              <th>{{d.th_4}}</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <tr>
+              <a routerLink={{d.link}}>
+                <td>{{d.td_1}}</td>
+              </a>
+              <td>{{d.td_2}}</td>
+              <td>{{d.td_3}}</td>
+              <td>{{d.td_4}}</td>
+            </tr>
+            <tr>
+              <a routerLink={{d.link}}>
+                <td>{{d.td_5}}</td>
+              </a>
+              <td>{{d.td_6}}</td>
+              <td>{{d.td_7}}</td>
+              <td>{{d.td_8}}</td>
+            </tr>
+            <tr>
+              <a routerLink={{d.link}}>
+                <td>{{d.td_9}}</td>
+              </a>
+              <td>{{d.td_10}}</td>
+              <td>{{d.td_11}}</td>
+              <td>{{d.td_12}}</td>
+            </tr>
+            <tr>
+              <a routerLink={{d.link}}>
+                <td>{{d.td_13}}</td>
+              </a>
+              <td>{{d.td_14}}</td>
+              <td>{{d.td_15}}</td>
+              <td>{{d.td_16}}</td>
+            </tr>
+            <tr>
+              <a routerLink={{d.link}}>
+                <td>{{d.td_17}}</td>
+              </a>
+              <td>{{d.td_18}}</td>
+              <td>{{d.td_19}}</td>
+              <td>{{d.td_20}}</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="redline yellow darken-3"></div>
+        </div>
+
+
+
+
+      <p>Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry.
+        Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book.</p>
+    </div>
+  </div>
+
+</div>

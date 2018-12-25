@@ -1,0 +1,19 @@
+[
+  {
+    "logo":"./assets/images/logo.png",
+    "phoneIcon":"./assets/images/phone.png",
+    "home":"ГЛАВНАЯ",
+    "aboutus":"О НАС",
+    "gallery":"Каталог техники",
+    "services":"Услуги",
+    "pricelist":"Прайс-лист",
+    "contacts":"Контакты",
+    "fbIcon":"./assets/images/facebook.png",
+    "fbLink":"https://facebook.com",
+    "vkIcon":"./assets/images/vk.png",
+    "vkLink":"https://vk.com",
+    "instagramIcon":"./assets/images/instagram.png",
+    "instagramLink":"https://instagram.com",
+    "zakazatZvonok":"Заказать звонок"
+  }
+]

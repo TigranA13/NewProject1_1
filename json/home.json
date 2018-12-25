@@ -1,0 +1,78 @@
+[
+  {
+    "sImg1":"https://via.placeholder.com/500x200",
+    "sImg2":"https://via.placeholder.com/500x200",
+    "sImg3":"https://via.placeholder.com/500x200",
+    "sImg4":"https://via.placeholder.com/500x200",
+    "h4_1":"Каталог строительной техники",
+    "h4_2":"Наши акции",
+    "h4_3":"Наши работы",
+    "h4_4":"Последние новости",
+    "info1":[
+      {
+        "cardImg":"https://via.placeholder.com/300x200",
+        "h5":"При заказе от 3 смен - Mondoro Asti в подарок",
+        "p":"Some p here ......."
+      },
+      {
+        "cardImg":"https://via.placeholder.com/300x200",
+        "h5":"Перевозка бытовок от 5000 руб.",
+        "p":"Some p here ......."
+      },
+      {
+        "cardImg":"https://via.placeholder.com/300x200",
+        "h5":"Ночью - дешевле!",
+        "p":"Some p here ......."
+      }
+
+    ],
+    "info2":[
+      {
+        "smallImg":"https://via.placeholder.com/100x100"
+      },
+      {
+        "smallImg":"https://via.placeholder.com/100x100"
+      },
+      {
+        "smallImg":"https://via.placeholder.com/100x100"
+      },
+      {
+        "smallImg":"https://via.placeholder.com/100x100"
+      },
+      {
+        "smallImg":"https://via.placeholder.com/100x100"
+      },
+      {
+        "smallImg":"https://via.placeholder.com/100x100"
+      }
+    ],
+    "info3":[
+      {
+        "lastCardImg":"https://via.placeholder.com/300x200",
+        "lastH5":"Some Title Here 1",
+        "lastP":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
+
+      },
+      {
+        "lastCardImg":"https://via.placeholder.com/300x200",
+        "lastH5":"Some Title Here 2",
+        "lastP":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
+
+      },
+      {
+        "lastCardImg":"https://via.placeholder.com/300x200",
+        "lastH5":"Some Title Here 3",
+        "lastP":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
+
+      },
+      {
+        "lastCardImg":"https://via.placeholder.com/300x200",
+        "lastH5":"Some Title Here 4",
+        "lastP":"I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
+
+      }
+    ]
+
+  }
+
+]

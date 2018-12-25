@@ -1,0 +1,15 @@
+[
+  {
+    "homeLinkName":"Главная",
+    "contactsLinkName":"Контакты",
+    "mainH4":"Контакты",
+    "addressTitle":"Address",
+    "addressTxt":"Some address ...",
+    "phoneTitle":"Phone",
+    "phoneTxt":"+00 000 000 000",
+    "emailTitle":"Email",
+    "emailTxt":"info@domain.com",
+    "emailLink":"mailto:info@domain.com",
+    "img":"https://via.placeholder.com/800x400"
+  }
+]

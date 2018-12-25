@@ -1,0 +1,67 @@
+[
+  {
+    "homeLinkName":"Главная",
+    "galleryLinkName":"Каталог техники",
+    "mainH4":"Каталог техники",
+    "P_1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "P_2":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "catalog":[
+      {
+        "name": "АВТОКРАН",
+        "img1": "./assets/images/1.jpg",
+        "img2": "./assets/images/1.1.png",
+        "link":"/galleryD"
+      },
+      {
+        "name": "КРАН-МАНИПУЛЯТОР",
+        "img1": "./assets/images/2.jpg",
+        "img2": "./assets/images/2.2.png",
+        "link":"/galleryD2"
+      },
+      {
+        "name": "АВТОВЫШКИ",
+        "img1": "./assets/images/3.jpg",
+        "img2": "./assets/images/3.3.png",
+        "link":"/galleryD3"
+      },
+      {
+        "name": "БОРТОВЫЕ МАШИНЫ",
+        "img1": "./assets/images/4.jpg",
+        "img2": "./assets/images/4.4.png",
+        "link":"/galleryD4"
+      },
+      {
+        "name": "САМОСВАЛЫ",
+        "img1": "./assets/images/5.jpg",
+        "img2": "./assets/images/5.5.png",
+        "link":"/galleryD5"
+      },
+      {
+        "name": "ЭКСКАВАТОРЫ-ПОГРУЗЧИКИ",
+        "img1": "./assets/images/6.jpg",
+        "img2": "./assets/images/6.6.png",
+        "link":"/galleryD6"
+      },
+      {
+        "name": "ЭКСКАВАТОРЫ ГУСЕНИЧНЫЕ",
+        "img1": "./assets/images/7.jpg",
+        "img2": "./assets/images/7.7.png",
+        "link":"/galleryD7"
+      },
+      {
+        "name": "ЭКСКАВАТОРЫ КОЛЕСНЫЕ",
+        "img1": "./assets/images/8.jpg",
+        "img2": "./assets/images/8.8.png",
+        "link":"/galleryD8"
+      },
+      {
+        "name": "ТЕЛЕСКОПИЧЕСКИЙ",
+        "img1": "./assets/images/9.jpg",
+        "img2": "./assets/images/9.9.png",
+        "link":"/galleryD9"
+      }
+    ]
+
+  }
+
+]
