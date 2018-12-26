@@ -68,8 +68,8 @@
               <div class="modal-content">
 
                 <img src={{d2.cardImg}}>
-                <h4>{{d2.h5}}</h4>
-                <p>{{d2.p}}</p>
+                <h4 class="yellow-text text-darken-3">{{d2.h5}}</h4>
+                <p class="left-align">{{d2.p}}</p>
               </div>
               <div class="modal-footer">
                 <a  class="modal-action modal-close waves-effect waves-grey btn-flat"><i class="material-icons">close</i></a>
@@ -100,15 +100,15 @@
       <h4 class="header yellow-text text-darken-3 center-align">{{d.h4_4}}</h4>
 
       <div class="row center-align">
-        <div class="col s12 m3 " *ngFor="let d4 of data4">
+        <div class="col s12 m6 xl3" *ngFor="let d4 of data4">
 
-            <div class="card z-depth-0 thirdCards">
+            <div class="card z-depth-0 thirdCards medium">
               <a href="#{{d4.lastH5}}" class="modal-trigger">
                 <div class="card-image">
                   <img src={{d4.lastCardImg}}>
                 </div>
                 <div class="card-content ">
-                  <h5>{{d4.lastH5}}</h5>
+                  <h6>{{d4.lastH5}}</h6>
                   <p class="black-text">{{d4.lastP}}</p>
                 </div>
               </a>
@@ -120,8 +120,8 @@
           <div id="{{d4.lastH5}}" class="modal modal-fixed-footer">
             <div class="modal-content">
               <img src={{d4.lastCardImg}}>
-              <h4>{{d4.lastH5}}</h4>
-              <p>{{d4.lastP}}</p>
+              <h4 class="yellow-text text-darken-3">{{d4.lastH5}}</h4>
+              <p class="left-align">{{d4.lastP}}</p>
             </div>
             <div class="modal-footer">
               <a  class="modal-action modal-close waves-effect waves-grey btn-flat"><i class="material-icons">close</i></a>

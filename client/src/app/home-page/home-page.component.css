@@ -1,8 +1,8 @@
 .carousel{
-  max-height: 500px !important;
+  max-height: 550px !important;
 }
 .carousel a.carousel-item img{
-  max-height: 500px !important;
+  max-height: 550px !important;
 }
 
 .firstH4{
@@ -44,20 +44,24 @@ div.hoverable{
   color: black;
   border-bottom: 8px solid #f9a825;
 }
+.secondCards:hover{
+  border-bottom: 8px solid #212121;
+}
 .secondCards:hover h5{
   color: #f9a825 !important;
 }
 .thirdCards{
   border-bottom: 8px solid #212121;
 }
-.thirdCards h5{
+.thirdCards h6{
+  font-size: 22px;
   color: #f9a825 !important;
 }
 .thirdCards:hover{
   color: #212121 !important;
   border-bottom: 8px solid #f9a825;
 }
-.thirdCards:hover h5{
+.thirdCards:hover h6{
   color: #212121 !important;
 }
 

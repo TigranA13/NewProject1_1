@@ -2,7 +2,7 @@
 <div class="container">
   <nav class="white  z-depth-0">
     <div class="nav-wrapper">
-      <div class="col s12">
+      <div class="col s12 ">
         <a routerLink="/glavnaya" class=" black-text">Главная</a>
         <span class="black-text"> > </span>
         <a routerLink="/katalog" class=" black-text">Каталог техники</a>
@@ -20,10 +20,10 @@
   <h4>{{name}}</h4>
 
   <div class="row">
-    <div class="col m12 l6">
-      <img src={{img}} width="450">
+    <div class="col l12 xl6">
+      <img src={{img}} width="450" class="responsive-img">
     </div>
-    <div class="col m12 l6 center-align">
+    <div class="col l12 xl6">
       <h5>{{price | currency:'RUB '}}</h5>
       <p>{{text}}</p>
       <a routerLink="/contacts" class="waves-effect waves-light btn-large contactBtn">Связаться</a>

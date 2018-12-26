@@ -36,9 +36,10 @@ export class HomePageComponent implements OnInit {
     });
 
     $(document).ready(function(){
-      $('.materialboxed').materialbox();
+
 
       setTimeout(function () {
+        $('.materialboxed').materialbox();
         $('.modal').modal();
         $('.carousel').carousel({
           indicators: true,
