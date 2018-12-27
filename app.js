@@ -7,7 +7,9 @@ const bodyParser = require("body-parser");
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/mvmDB', {useNewUrlParser: true})
+const keys = require('./config/keys');
+
+mongoose.connect(keys.mongoDB_URL, {useNewUrlParser: true})
         .then(()=>console.log('MongoDB has started ...'))
         .catch((e)=>console.log(e));
 

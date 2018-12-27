@@ -37,10 +37,13 @@ export class HomePageComponent implements OnInit {
 
     $(document).ready(function(){
 
-
-      setTimeout(function () {
+      setTimeout(function(){
         $('.materialboxed').materialbox();
         $('.modal').modal();
+      }, 250);
+      
+      setTimeout(function () {
+
         $('.carousel').carousel({
           indicators: true,
           fullWidth: true,

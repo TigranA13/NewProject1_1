@@ -14,9 +14,9 @@
 
 }
 .phone img{
-  height: 35px;
-  width: 35px;
-  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
   margin-right: 10px;
 }
 .phone a {
@@ -25,7 +25,10 @@
   font-weight: bold;
 
 }
-
+.phone span{
+  margin-top: 10px;
+  margin-right: 10px;
+}
 .icons img{
   height: 35px;
   width: 35px;
