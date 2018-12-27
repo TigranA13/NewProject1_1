@@ -8,6 +8,6 @@ export class ServicePageService {
 
   constructor(private http: HttpClient) { }
   getData(){
-    return this.http.get('http://localhost:3000/services-page')
+    return this.http.get('http://localhost:3000/api/services-page')
   }
 }

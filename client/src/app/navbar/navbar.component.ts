@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   constructor(private navservice: NavbarService) { }
 
   ngOnInit() {
+   
     this.navservice.getData().subscribe(data=>{
       this.data = data;
     });

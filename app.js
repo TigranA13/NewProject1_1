@@ -83,7 +83,7 @@ const Contacts = mongoose.model('contacts');
 
 
 
-app.use('/', require('./routes/index'));
+app.use('/api/', require('./routes/index'));
 
 app.use('/', (req, res)=>{
     res.status(404).json({

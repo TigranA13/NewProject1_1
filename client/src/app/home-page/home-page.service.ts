@@ -8,6 +8,6 @@ export class HomePageService {
 
   constructor(private http: HttpClient) { }
   getData(){
-    return this.http.get('http://localhost:3000/home-page')
+    return this.http.get('http://localhost:3000/api/home-page')
   }
 }

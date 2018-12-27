@@ -8,6 +8,6 @@ export class ContactsService {
 
   constructor(private http: HttpClient) { }
   getData(){
-    return this.http.get('http://localhost:3000/contacts-page')
+    return this.http.get('http://localhost:3000/api/contacts-page')
   }
 }

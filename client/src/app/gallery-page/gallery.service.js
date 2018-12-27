@@ -11,34 +11,34 @@ var GalleryService = (function () {
         this.http = http;
     }
     GalleryService.prototype.getData = function () {
-        return this.http.get('http://localhost:3000/gallery-page');
+        return this.http.get('http://localhost:3000/api/gallery-page');
     };
     GalleryService.prototype.getData1 = function () {
-        return this.http.get('http://localhost:3000/gallery-d1-page');
+        return this.http.get('http://localhost:3000/api/gallery-d1-page');
     };
     GalleryService.prototype.getData2 = function () {
-        return this.http.get('http://localhost:3000/gallery-d2-page');
+        return this.http.get('http://localhost:3000/api/gallery-d2-page');
     };
     GalleryService.prototype.getData3 = function () {
-        return this.http.get('http://localhost:3000/gallery-d3-page');
+        return this.http.get('http://localhost:3000/api/gallery-d3-page');
     };
     GalleryService.prototype.getData4 = function () {
-        return this.http.get('http://localhost:3000/gallery-d4-page');
+        return this.http.get('http://localhost:3000/api/gallery-d4-page');
     };
     GalleryService.prototype.getData5 = function () {
-        return this.http.get('http://localhost:3000/gallery-d5-page');
+        return this.http.get('http://localhost:3000/api/gallery-d5-page');
     };
     GalleryService.prototype.getData6 = function () {
-        return this.http.get('http://localhost:3000/gallery-d6-page');
+        return this.http.get('http://localhost:3000/api/gallery-d6-page');
     };
     GalleryService.prototype.getData7 = function () {
-        return this.http.get('http://localhost:3000/gallery-d7-page');
+        return this.http.get('http://localhost:3000/api/gallery-d7-page');
     };
     GalleryService.prototype.getData8 = function () {
-        return this.http.get('http://localhost:3000/gallery-d8-page');
+        return this.http.get('http://localhost:3000/api/gallery-d8-page');
     };
     GalleryService.prototype.getData9 = function () {
-        return this.http.get('http://localhost:3000/gallery-d9-page');
+        return this.http.get('http://localhost:3000/api/gallery-d9-page');
     };
     GalleryService = __decorate([
         core_1.Injectable({

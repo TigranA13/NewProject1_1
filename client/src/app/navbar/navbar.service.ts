@@ -9,6 +9,6 @@ export class NavbarService {
   constructor(private http: HttpClient) { }
 
   getData(){
-    return this.http.get('http://localhost:3000/navbar')
+    return this.http.get('http://localhost:3000/api/navbar')
   }
 }

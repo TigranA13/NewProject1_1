@@ -9,8 +9,11 @@ declare var $:any;
 export class AppComponent {
   ngOnInit() {
     $(document).ready(function(){
-      $('.sidenav').sidenav();
-      
+      setTimeout(function () {
+        $('.sidenav').sidenav()
+      }, 250) ;
+
+
     });
   }
 }

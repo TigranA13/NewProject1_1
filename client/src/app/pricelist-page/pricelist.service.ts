@@ -9,6 +9,6 @@ export class PricelistService {
   constructor(private http: HttpClient) { }
 
   getData(){
-    return this.http.get('http://localhost:3000/pricelist-page')
+    return this.http.get('http://localhost:3000/api/pricelist-page')
   }
 }
